@@ -1,11 +1,9 @@
 # Integrate MCP with GitHub Copilot
 
-<!-- ![](../../actions/workflows/0-start-exercise.yml/badge.svg) -->
-
-![](../../actions/workflows/1-create-a-branch.yml/badge.svg)
-![](../../actions/workflows/2-commit-a-file.yml/badge.svg)
-![](../../actions/workflows/3-open-a-pull-request.yml/badge.svg)
-![](../../actions/workflows/4-merge-your-pull-request.yml/badge.svg)
+![](../../actions/workflows/1-step.yml/badge.svg)
+![](../../actions/workflows/2-step.yml/badge.svg)
+![](../../actions/workflows/3-step.yml/badge.svg)
+![](../../actions/workflows/4-step.yml/badge.svg)
 
 _Learn how to integrate Model Context Protocol (MCP) with GitHub Copilot in less than an hour._
 
@@ -15,7 +13,7 @@ The Model Context Protocol (MCP) provides powerful ways to enhance AI interactio
 
 - **Who is this for**: Developers looking to enhance their AI-assisted workflows, GitHub Copilot users, and AI enthusiasts.
 - **What you'll learn**: We'll introduce MCP basics, GitHub MCP server setup, and integration with Copilot Agent Mode.
-<!-- TODO: - **What you'll build**: -->
+- **What you'll build**: You will fix a bug that was reported on your website's repository.
 - **Prerequisites**: [Getting Started with Copilot Exercise](https://github.com/skills/getting-started-with-github-copilot)
 - **How long**: This exercise takes less than one hour to complete.
 
@@ -44,7 +42,7 @@ In this exercise, you will:
 
    - The **Copy Exercise** button will deactivate, changing to gray.
    - The **Start Exercise** button will activate, changing to green.
-   - You will likely need to refresh the page.
+   - You will need to refresh the page.
 
 4. Click **Start Exercise**. Follow the step-by-step instructions and feedback will be provided as you progress.
 
@@ -53,7 +51,7 @@ In this exercise, you will:
    </a>
 
 > [!IMPORTANT]
-> The **Start Exercise** button will activate after copying the repository. You will probably need to refresh the page.
+> The **Start Exercise** button will activate after copying the repository. You will need to refresh the page.
 
 ---
 
