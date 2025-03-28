@@ -95,7 +95,7 @@ We are using the same web application as in the [Getting Started with Copilot](h
 
 Make sure you:
 
-- Properly properly copied the `json` contents above to `.vscode/mcp.json` file
+- Properly copied the `json` contents above to `.vscode/mcp.json` file
 - Pushed your changes to the `main` branch
 
 </details>
