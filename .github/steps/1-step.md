@@ -38,8 +38,13 @@ We are using the same web application as in the [Getting Started with Copilot](h
     "servers": {
       "github": {
         "command": "npx",
-        "args": ["-y", "@modelcontextprotocol/server-github"],
-        "envFile": "${workspaceFolder}/.env"
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-github"
+        ],
+        "env": {
+          "GITHUB_PERSONAL_ACCESS_TOKEN": "${env:GITHUB_TOKEN}"
+        }
       }
     }
   }
