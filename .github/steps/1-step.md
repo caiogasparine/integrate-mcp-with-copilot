@@ -52,16 +52,40 @@ We are using the same web application as in the [Getting Started with Copilot](h
 
 1. Save the file and you should see `Start` button show up like so:
 
-    <!-- TODO: Add screenshot with start button -->
+    ![image](https://github.com/user-attachments/assets/c82a4202-1f4a-4123-ad14-5e33ecd6316c)
+
 
 1. Start the server and validate it is running.
    1. The `.vscode/mcp.json` file should show if the server you started is running
-   <!-- TODO: Add screenshot -->
+
+      <details>
+      <summary>:camera_flash: See screenshot</summary><br/>
+   
+      ![image](https://github.com/user-attachments/assets/80f3fcda-34a8-486e-95a3-c166e9152b9a)
+   
+      </details>
+
    1. You should see additional tools available in Copilot Agent Mode
-   <!-- TODO: Add screenshot -->
+   
+      <details>
+      <summary>:camera_flash: See screenshot</summary><br/>
+   
+      ![image](https://github.com/user-attachments/assets/95af044c-3f26-4f5c-b933-7630db72eb67)
+      
+      </details>
+
    1. You can use the VSCode command palette `Ctrl+Shift+P` or `Command+Shift+P` on Mac.
    Start typing `> MCP` to see different MCP commands, such as listing active servers.
-   <!-- TODO: Add screenshot -->
+
+      <details>
+      <summary>:camera_flash: See screenshot</summary><br/>
+   
+      ![image](https://github.com/user-attachments/assets/6a127ac2-a6dc-495b-bc5f-d52425f709f8)
+   
+      </details>
+
+
+
 
 1. Commit and push the `.vscode/mcp.json` file to the `main` branch
 
