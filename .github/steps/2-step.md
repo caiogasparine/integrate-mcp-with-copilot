@@ -15,9 +15,15 @@ In the background your repository just received a [bug report]({{{bug_report_url
 
 Let's use GitHub Copilot Agent Mode together with GitHub MCP server to work on that issue.
 
-1. Open the **Copilot Chat Agent Mode** panel in VS Code and ensure that GitHub MCP Server is active, and the tools are enabled
+1. Open the **Copilot Chat Agent Mode** panel in VS Code, click the 🛠️ Tools icon and ensure that GitHub MCP Server is running and the tools are enabled
 
-   <!-- TODO: Add screenshot -->
+   <details>
+   <summary>:camera_flash: See screenshot</summary><br/>
+
+   ![image](https://github.com/user-attachments/assets/6a6740ae-f7a6-40dc-870a-8c9869faabd7)
+
+
+   </details>
 
 1. Ask Copilot if there are any open bug reports on your repository:
 
