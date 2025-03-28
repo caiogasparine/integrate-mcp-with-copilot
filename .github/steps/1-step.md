@@ -32,24 +32,24 @@ We are using the same web application as in the [Getting Started with Copilot](h
 
 1. Inside your codespace, create a new file named `mcp.json` in the `.vscode` directory and paste the following contents:
 
-```json
-// .vscode/mcp.json
-{
-  "servers": {
-    "github": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-github"],
-      "envFile": "${workspaceFolder}/.env"
+  ```json
+  // .vscode/mcp.json
+  {
+    "servers": {
+      "github": {
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-github"],
+        "envFile": "${workspaceFolder}/.env"
+      }
     }
   }
-}
-```
+  ```
 
 1. Save the file and you should see `Start` button show up like so:
 
     <!-- TODO: Add screenshot with start button -->
 
-1. Validate the MCP Server is running.
+1. Start the server and validate it is running.
    1. The `.vscode/mcp.json` file should show if the server you started is running
    <!-- TODO: Add screenshot -->
    1. You should see additional tools available in Copilot Agent Mode
@@ -66,7 +66,7 @@ We are using the same web application as in the [Getting Started with Copilot](h
 
 Make sure you:
 
-- Properly uncommented the contents of `.vscode/mcp.json` file
+- Properly properly copied the `json` contents above to `.vscode/mcp.json` file
 - Pushed your changes to the `main` branch
 
 </details>
