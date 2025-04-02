@@ -16,14 +16,3 @@ While AI assistants like GitHub Copilot can dramatically improve productivity, i
 1. Once you're satisfied with the changes, merge the pull request
 
    >  🪧 **Note:** If you are not satisfied, go back to the codespace and work with Copilot to introduce the changes. Remember, coding is an iterative process.
-
-<details>
-<summary>Having trouble?</summary><br/>
-
-If you encounter issues:
-
-- Make sure the PR was created correctly in the previous step
-- If needed, you can navigate directly to your repository on GitHub.com to find the PR
-- Remember that while MCP helps Copilot understand your repo better, human review is still essential
-
-</details>
