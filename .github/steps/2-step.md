@@ -33,6 +33,17 @@ Let's use GitHub Copilot Agent Mode together with GitHub MCP server to work on t
    > Are there any open bug report issues on my repository ({{{full_repo_name}}}) ?
    > ```
 
+   <details>
+   <summary>:camera_flash: Copilot should figure out that it can use GitHub MCP server for this. </summary><br/>
+
+   <img width="400px" src="https://github.com/user-attachments/assets/7a9aea70-7c50-46d8-848e-092ade825573" />
+
+   </details>
+   
+   
+   
+
+
    > 🪧 **Note:** We explicitly include the repository name to add it to Copilot's session context. For subsequent prompts, this context will be preserved in the conversation.
 
    > ✨ **Bonus:** You are welcome to try the prompt without it and if Copilot chooses to list issues in a different repository, guide it your way.
