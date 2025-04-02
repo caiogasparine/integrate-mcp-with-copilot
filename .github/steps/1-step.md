@@ -1,6 +1,6 @@
 ## Step 1: Introduction to MCP and environment setup
 
-In this exercise, you'll learn how TO USE Model Context Protocol (MCP) to connect GitHub Copilot to your entire toolchain.
+In this exercise, you'll learn how to use Model Context Protocol (MCP) to connect GitHub Copilot to your entire toolchain.
 This integration allows you to solve problems across platforms without leaving your code editor. **Less context switching, more coding**.
 
 > [!IMPORTANT]
@@ -8,8 +8,7 @@ This integration allows you to solve problems across platforms without leaving y
 
 ### What is Model Context Protocol (MCP)?
 
-[Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) is often referred to as "USB-C for AI" - a universal connector that let's GitHub Copilot to seamlessly interact with external tooling.
-
+[Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) is often referred to as "USB-C for AI" - a universal connector that allows GitHub Copilot to seamlessly interact with external tooling.
 ```mermaid
 graph LR
     A[Developer] -->|Uses| B[GitHub Copilot]
