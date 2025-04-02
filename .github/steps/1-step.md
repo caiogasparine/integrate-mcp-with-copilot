@@ -1,15 +1,35 @@
 ## Step 1: Introduction to MCP and environment setup
 
-Welcome to the **"Integrate Model Context Protocol with GitHub Copilot"** exercise! :robot:
-
-In this exercise, you'll learn how Model Context Protocol (MCP) enhances the way you use GitHub Copilot.
+In this exercise, you'll learn how TO USE Model Context Protocol (MCP) to connect GitHub Copilot to your entire toolchain.
+This integration allows you to solve problems across platforms without leaving your code editor. **Less context switching, more coding**.
 
 > [!IMPORTANT]
-> This exercise may not explain the basics that were taught in the [Getting Started with Copilot](https://github.com/skills/getting-started-with-github-copilot) exercise. If you are new to Copilot we recommend starting with that one.
+> This exercise may not explain the Copilot basics that were introduced in the [Getting Started with Copilot](https://github.com/skills/getting-started-with-github-copilot) exercise. If you are new to Copilot we recommend starting with that one.
 
 ### What is Model Context Protocol (MCP)?
 
-[Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) is an open standard that bridges AI models with external data sources and tools. It provides a universal interface for connecting AI assistants like GitHub Copilot to various system allowing them to access real-time data, perform actions in external systems, and leverage specialized tools beyond their built-in capabilities.
+[Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) is often referred to as "USB-C for AI" - a universal connector that let's GitHub Copilot to seamlessly interact with external tooling.
+
+```mermaid
+graph LR
+    A[Developer] -->|Uses| B[GitHub Copilot]
+    B -->|Unified API| MCP[Model Context Protocol]
+
+    MCP <-->|Unique API| C[(GitHub)]
+    MCP <-->|Unique API| D[(Slack)]
+    MCP <-->|Unique API| E[(Figma)]
+
+    style B fill:#4CAF50,stroke:#333,stroke-width:2px
+
+    subgraph "Less Context Switching, More Coding"
+        B
+        MCP
+        C
+        D
+        E
+
+    end
+```
 
 ### :keyboard: Activity: Get to know your environment
 

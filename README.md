@@ -9,8 +9,6 @@ _Learn how to integrate Model Context Protocol (MCP) with GitHub Copilot in less
 
 ## Welcome
 
-The Model Context Protocol (MCP) provides powerful ways to enhance AI interactions in your development workflow. By integrating MCP with GitHub Copilot, you can leverage context-aware AI assistance to build more sophisticated applications. This exercise guides you through everything you need to start using MCP with GitHub Copilot in less than an hour.
-
 - **Who is this for**: Developers looking to enhance their AI-assisted workflows, GitHub Copilot users, and AI enthusiasts.
 - **What you'll learn**: We'll introduce MCP basics, GitHub MCP server setup, and integration with Copilot Agent Mode.
 - **What you'll build**: You will fix a bug that was reported on your website's repository.
@@ -19,10 +17,9 @@ The Model Context Protocol (MCP) provides powerful ways to enhance AI interactio
 
 In this exercise, you will:
 
-1. Learn the basics of Model Context Protocol (MCP)
-2. Set up a GitHub MCP server
-3. Integrate MCP with GitHub Copilot Agent Mode
-4. Create a sample application showcasing the integration
+1. Configure a GitHub MCP server
+2. Integrate MCP with GitHub Copilot Agent Mode
+3. Learn how to use MCP Servers to supercharge your workflow.
 
 ### How to start this exercise
 
