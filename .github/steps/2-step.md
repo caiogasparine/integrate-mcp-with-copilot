@@ -44,7 +44,7 @@ Let's use GitHub Copilot Agent Mode together with GitHub MCP server to work on t
    > ```prompt
    > Okay, let's start working on the bug report.
    > Comment on the issue that I will take a look at the issue and try to fix it.
-   > Create a new branch, introduce the changes and raise a pull request to the `main` branch
+   > Introduce the changes to the activities, push the changes to a new branch, and raise a pull request to `main`.
    > ```
 
    > ⚠️ **Warning:** Always verify the information that Copilot passes to the MCP server before accepting.

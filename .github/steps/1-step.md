@@ -51,38 +51,40 @@ We are using the same web application as in the [Getting Started with Copilot](h
 
 1. Inside your codespace, create a new file named `mcp.json` in the `.vscode` directory and paste the following contents:
 
-```json
-// .vscode/mcp.json
-{
-  "servers": {
-    "github": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-github"],
-      "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:githubToken}"
+   ```json
+   // .vscode/mcp.json
+   {
+   "servers": {
+      "github": {
+         "command": "npx",
+         "args": ["-y", "@modelcontextprotocol/server-github"],
+         "env": {
+         "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:githubToken}"
+         }
       }
-    }
-  },
-  "inputs": [
-    {
-      "type": "promptString",
-      "id": "githubToken",
-      "description": "Enter your GitHub personal access token",
-      "password": true
-    }
-  ]
-}
-```
+   },
+   "inputs": [
+      {
+         "type": "promptString",
+         "id": "githubToken",
+         "description": "Enter your GitHub personal access token",
+         "password": true
+      }
+   ]
+   }
+   ```
 
-1. Save the file and you should see `Start` button show up like so:
-
-   ![image](https://github.com/user-attachments/assets/c82a4202-1f4a-4123-ad14-5e33ecd6316c)
-
-1. When you start the server, you will be prompted to provide a GitHub Token. You can use the token provided to you by the GitHub Codespace you are working in.
+1. In a moment, when you start the server - you will be prompted to provide a GitHub Token. Print it out in the terminal and copy it to your clipboard (`CTRL+C`).
 
    ```bash
       echo $GITHUB_TOKEN
    ```
+
+1. Back in the `.vscode/mcp.json` file you should see `Start` button show up like so:
+
+   ![image](https://github.com/user-attachments/assets/c82a4202-1f4a-4123-ad14-5e33ecd6316c)
+
+1. Click the `Start` button to launch the GitHub MCP server locally. When prompted, paste the GitHub token you copied earlier.
 
 1. Validate the server is running.
 

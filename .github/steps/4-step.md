@@ -1,6 +1,5 @@
 ## Step 4: Wrap up on the bug report
 
-
 ### :keyboard: Activity: Wrap up the bug report
 
 1. Open the **Copilot Chat Agent Mode** session in VS Code.
@@ -21,4 +20,3 @@
    - Check what information is passed to the MCP server calls - is Copilot using the correct repository?
    - Did Copilot comment on the bug report?
    </details>
-

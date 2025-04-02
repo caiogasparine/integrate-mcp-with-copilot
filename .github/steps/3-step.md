@@ -11,7 +11,7 @@ While AI assistants like GitHub Copilot can dramatically improve productivity, i
 
 1. Examine the [pull request]({{{pull_request_url}}}) Copilot helped you create.
 
-> ✨ **Bonus:** If your access is sufficient, you can ask Copilot to review your code.
+  > ✨ **Bonus:** If your access is sufficient, you can ask Copilot to review your code.
 
 1. Once you're satisfied with the changes, merge the pull request
 
