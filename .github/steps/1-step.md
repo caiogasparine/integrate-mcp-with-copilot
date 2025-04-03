@@ -58,10 +58,13 @@ We are using the same web application as in the [Getting Started with Copilot](h
 
 1. Throughout the exercise, you can access the website link from the `ports` tab on port `8000`.
 
-   <!-- todo: add screenshot -->
-   <!-- <details>
+   <details>
    <summary>:camera_flash: See screenshot</summary><br/>
-   </details> -->
+       
+    <img width="200" alt="ports tab" src="https://github.com/user-attachments/assets/bd25ed3c-0656-448c-b809-edc10c0ab6cf" />
+
+
+   </details>
 
 ### :keyboard: Activity: Set up a MCP server for your project
 
