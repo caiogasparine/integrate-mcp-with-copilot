@@ -3,8 +3,6 @@
 In this exercise, you'll learn how to use Model Context Protocol (MCP) to connect GitHub Copilot to your entire toolchain.
 This integration allows you to solve problems across platforms without leaving your code editor. **Less context switching, more coding**.
 
-> [!IMPORTANT]
-> This exercise may not explain the Copilot basics that were introduced in the [Getting Started with Copilot](https://github.com/skills/getting-started-with-github-copilot) exercise. If you are new to Copilot we recommend starting with that one.
 
 ### What is Model Context Protocol (MCP)?
 
