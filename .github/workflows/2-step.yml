@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - "src/app.py"
+      - "src/**"
 
 permissions:
   contents: read
@@ -42,7 +42,6 @@ jobs:
           path: exercise-toolkit
           ref: v0.1.0
 
-
       - name: Update comment - checking work
         run: |
           gh issue comment "$ISSUE_URL" \
@@ -50,6 +49,8 @@ jobs:
             --edit-last
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # TODO: Check for changes in app.py
 
       - name: Build message - step finished
         id: build-message-step-finish
