@@ -50,7 +50,31 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # TODO: Check for changes in app.py
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v46.0.3
+
+      - name: Check for changes in app.py
+        env:
+          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          APP_FILE_CHANGED=false
+          for file in ${ALL_CHANGED_FILES}; do
+            echo "$file was changed"
+            if [[ "$file" == "src/app.py" ]]; then
+              APP_FILE_CHANGED=true
+              break
+            fi
+          done
+
+          if [[ "$APP_FILE_CHANGED" != "true" ]]; then
+            echo "src/app.py was not modified, commenting on the exercise issue"
+            gh issue comment "$ISSUE_URL" \
+              --body "I noticed that **src/app.py** was not modified in your pull request. Please update the High School Activities Database in that file to complete this step."
+            exit 1
+          fi
+
 
       - name: Build message - step finished
         id: build-message-step-finish
