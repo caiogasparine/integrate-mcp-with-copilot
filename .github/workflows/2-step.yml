@@ -23,12 +23,11 @@ jobs:
   check_step_work:
     name: Check step work
     runs-on: ubuntu-latest
-    # needs: find_exercise
+    needs: find_exercise
     if: |
       !github.event.repository.is_template
     env:
-      # ISSUE_URL: ${{ needs.find_exercise.outputs.issue-url }}
-      ISSUE_URL: "https://github.com/FidelusAleksander/skills-integrate-mcp-with-copilot/issues/1"
+      ISSUE_URL: ${{ needs.find_exercise.outputs.issue-url }}
 
     steps:
       - name: Checkout
