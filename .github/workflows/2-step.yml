@@ -1,6 +1,5 @@
 name: Step 2
 
-
 on:
   pull_request:
     branches:
@@ -16,7 +15,6 @@ permissions:
 env:
   STEP_3_FILE: ".github/steps/3-step.md"
 
-
 jobs:
   find_exercise:
     name: Find Exercise Issue
@@ -25,11 +23,12 @@ jobs:
   check_step_work:
     name: Check step work
     runs-on: ubuntu-latest
-    needs: find_exercise
+    # needs: find_exercise
     if: |
       !github.event.repository.is_template
     env:
-      ISSUE_URL: ${{ needs.find_exercise.outputs.issue-url }}
+      # ISSUE_URL: ${{ needs.find_exercise.outputs.issue-url }}
+      ISSUE_URL: "https://github.com/FidelusAleksander/skills-integrate-mcp-with-copilot/issues/1"
 
     steps:
       - name: Checkout
@@ -54,27 +53,27 @@ jobs:
         id: changed-files
         uses: tj-actions/changed-files@v46.0.3
 
+      - name: Build message - step mistake
+        id: build-message-step-mistake
+        uses: skills/action-text-variables@v1
+        with:
+          template-file: exercise-toolkit/markdown-templates/step-feedback/step-mistake.md
+          template-vars: |
+            feedback_message="Please update the High School Activities Database in **src/app.py file to complete this step."
+
       - name: Check for changes in app.py
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMENT_BODY: ${{ steps.build-message-step-mistake.outputs.updated-text }}
         run: |
-          APP_FILE_CHANGED=false
-          for file in ${ALL_CHANGED_FILES}; do
-            echo "$file was changed"
-            if [[ "$file" == "src/app.py" ]]; then
-              APP_FILE_CHANGED=true
-              break
-            fi
-          done
-
-          if [[ "$APP_FILE_CHANGED" != "true" ]]; then
+          if ! echo "${ALL_CHANGED_FILES}" | grep -q "src/app.py"; then
             echo "src/app.py was not modified, commenting on the exercise issue"
             gh issue comment "$ISSUE_URL" \
-              --body "I noticed that **src/app.py** was not modified in your pull request. Please update the High School Activities Database in that file to complete this step."
+              --body "$COMMENT_BODY" \
+              --edit-last
             exit 1
           fi
-
 
       - name: Build message - step finished
         id: build-message-step-finish
@@ -125,7 +124,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_BODY: ${{ steps.build-comment.outputs.updated-text }}
-
 
       - name: Create comment - watching for progress
         run: |
