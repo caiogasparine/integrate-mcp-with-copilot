@@ -48,12 +48,12 @@ Let's use GitHub Copilot Agent Mode together with GitHub MCP server to work on t
 
    > ✨ **Bonus:** You are welcome to try the prompt without it and if Copilot chooses to list issues in a different repository, guide it your way.
 
-1. Once Copilot identifies a bug report, ask it to implement a fix:
+1. Once Copilot identifies a bug report, ask it to implement a fix in your codebase:
 
    > <img width="13px" src="https://github.com/user-attachments/assets/98fd5d2e-ea29-4a4a-9212-c7050e177a69" /> **Prompt**
    >
    > ```prompt
-   > Okay, let's start working on the bug report.
+   > #codebase Okay, let's start working on the bug report.
    > Comment on the issue that I will take a look at the issue and try to fix it.
    > Introduce the changes to the activities, push the changes to a new branch, and raise a pull request to `main`.
    > ```
