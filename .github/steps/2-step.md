@@ -76,17 +76,18 @@ Isn't that cool?! Now let's do it! 👩‍🚀
 
    <img width="250" alt="request permission dialog" src="https://github.com/user-attachments/assets/52635294-950a-4168-b71e-498eb769f3af" />
 
+10. With the new issues created, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
 
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > What was the name of the owner of the repo we just reviewed?
-   > Search GitHub and give me a summary of other projects they have recently worked on.
-   > ```
+11. (Optional) Let's see if the author has other projects we might be interested in.
 
-   > 🪧 **Note:** We explicitly asked about the owner to help guide Copilot with the relative reference.
+    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+    >
+    > ```prompt
+    > What was the name of the owner of the repo we just reviewed?
+    > Search GitHub and give me a summary of other projects they have recently worked on.
+    > ```
 
-1. With the new issues created, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
+    > 🪧 **Note:** We explicitly asked about the owner to help guide Copilot with the relative reference.
 
 ### 💡 Important Notes
 
