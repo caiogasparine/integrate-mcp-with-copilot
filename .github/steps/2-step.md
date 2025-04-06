@@ -1,77 +1,94 @@
-## Step 2: Using Copilot Agent Mode with GitHub MCP Server
+## Step 2: Agent Mode and an MCP Server for GitHub
 
-You have just connected a first external MCP server to Copilot Chat!
+Great work! You just connected your first MCP server to GitHub Copilot! 🎉
 
-GitHub MCP Server exposes multiple tools for Copilot to use. Examples include searching GitHub, managing repositories, issues, pull requests and much more.
+🚨 It seems the teachers keep submitting bugs and requests! So many good ideas! We should probably look in to them and start researching for other upgrades.
 
-You interact with Copilot in natural language, and Copilot determines if what you are asking for is something that can be done through any MCP Servers you have currently running in your environment. Isn't that cool?
+Fortunately, with an MCP server for GitHub, triaging these and even doing some research to get ahead should be pretty quick! 🕵️
 
-> [!NOTE]
-> The GitHub MCP Server is limited to operations permitted by the `GITHUB_TOKEN` scope in your `.vscode/mcp.json` configuration.
+### How do we use an MCP server's tools?
 
-### :keyboard: Activity: Use Copilot for issue resolution
+Good news! The same way you would normally interact with Copilot, natural language. Just keep in mind the available capabilities and any permission restrictions from your token.
 
-In the background your repository just received a [bug report]({{{bug_report_url}}}) issue from one of the Mergington High School students trying to access the website.
+So, with the MCP Server available, we can now ask Copilot things beyond just our code. Here are some ideas to imagine the possibilities:
 
-Let's use GitHub Copilot Agent Mode together with GitHub MCP server to work on that issue.
+For example:
 
-1. Open the **Copilot Chat Agent Mode** panel in VS Code, click the 🛠️ Tools icon and ensure that GitHub MCP Server is running and the tools are enabled
+- Searching issues considering description, comments, and likes.
+- To open, update, or close issues on another repository.
+- Comparing repositories.
+- Learning about other authors you are working with.
+- Retrieve an issue, make changes on a branch, and start a pull request.
 
-   <details>
-   <summary>:camera_flash: See screenshot</summary><br/>
+Isn't that cool?! Now let's do it! 👩‍🚀
 
-   ![image](https://github.com/user-attachments/assets/6a6740ae-f7a6-40dc-870a-8c9869faabd7)
+### :keyboard: Activity: Quickly find and save ideas
 
+1. Ensure the **Copilot Chat** panel is open and **Agent** mode is selected. Verify the MCP server tools are also still available.
 
-   </details>
+1. Ask copilot to search github for projects similar to this one.
 
-1. Ask Copilot if there are any open bug reports on your repository:
-
-   > <img width="13px" src="https://github.com/user-attachments/assets/98fd5d2e-ea29-4a4a-9212-c7050e177a69" /> **Prompt**
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Are there any open bug report issues on my repository ({{{full_repo_name}}}) ?
+   > Are their any other repositories for organizing extra curricular actitivities?
    > ```
 
-   <details>
-   <summary>:camera_flash: Copilot should figure out that it can use GitHub MCP server for this. </summary><br/>
+1. When an MCP tool is required, Copilot will ask permission to use it.
 
-   <img width="400px" src="https://github.com/user-attachments/assets/7a9aea70-7c50-46d8-848e-092ade825573" />
+   📸 📸📸📸📸 Insert screenshot of request to run tool
 
-   </details>
-   
-   
-   
+1. Ask Copilot to describe one of the projects.
 
-
-   > 🪧 **Note:** We explicitly include the repository name to add it to Copilot's session context. For subsequent prompts, this context will be preserved in the conversation.
-
-   > ✨ **Bonus:** You are welcome to try the prompt without it and if Copilot chooses to list issues in a different repository, guide it your way.
-
-1. Once Copilot identifies a bug report, ask it to implement a fix in your codebase:
-
-   > <img width="13px" src="https://github.com/user-attachments/assets/98fd5d2e-ea29-4a4a-9212-c7050e177a69" /> **Prompt**
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > #codebase Okay, let's start working on the bug report.
-   > Comment on the issue that I will take a look at the issue and try to fix it.
-   > Introduce the changes to the activities, push the changes to a new branch, and raise a pull request to `main`.
+   > Please look at the code for the 3rd option and give me a detailed description of the features.
    > ```
 
-   > ⚠️ **Warning:** Always verify the information that Copilot passes to the MCP server before accepting.
+1. Use Copilot to compare and generate ideas for enhancements.
 
-1. Follow Copilot's guidance to create a pull request with the fix.
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Which of these features would be new for our project?
+   > ```
 
-   > 🪧 **Note:** Remember that Copilot is conversational, and you are power of guiding the AI assistant to implement what's on your mind.
+1. Nice! Let's have Copilot create issues to save these ideas.
 
-1. Once the pull request is created, Mona will start checking your work. Give her a moment and keep watch of the comments. You will see her respond with progress info and the next step!
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > I like it. Let's create issues for these. Please put them in the chriswblake/playground repo.
+   > ```
 
-<details>
-<summary>Having trouble?</summary><br/>
+1. Let's see if the author has other projects we might be interested in.
 
-If you encounter issues:
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > What was the name of the owner of the repo we just reviewed?
+   > Search GitHub and give me a summary of other projects they have recently worked on.
+   > ```
 
-- Make sure your MCP configuration is properly set up from Step 1
-- Verify that the tools are executed on your repository ({{{full_repo_name}}}). Whenever a MCP tool is invoked you can inspect what Copilot passes to the MCP Server.
+   > 🪧 **Note:** We explicitly asked about the owner to help guide Copilot with the relative reference.
 
-</details>
+1. With the new issues created, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
+
+### 💡 Important Notes
+
+The Model Context Protocal (MCP) is quickly evolving. Many servers, including the [Official GitHub MCP server](https://github.com/github/github-mcp-server) are in development and do not have full parity with their stable APIs.
+
+Prompt examples that aren't possible (yet):
+
+```prompt
+Please list the top contributors in the discussions area
+for the "Skills" GitHub organization.
+```
+
+```prompt
+Generate a summary of recent work for each follower in the
+'Skills' GitHub organization. Use those reviews to identify
+developers that might produce educational and training conent.
+Give them each a ranking score and save in a CSV file.
+```
