@@ -1,18 +1,49 @@
-## Step 3: Validating AI-generated code
+## Step 3: Solve issues with Agent Mode and GitHub MCP Server
 
-Great work on implementing the fix with Copilot!
+Great workd doing that research and finding a potential collaboration opportunity.
+Not only did we find some new ideas to help organize extracurricular activies, but we did all that quickly too.
 
-While AI assistants like GitHub Copilot can dramatically improve productivity, it's essential to remember that you are responsible for reviewing and validating all generated code.
+Plenty of time to focus on the fun stuff, teaching our awesome students! 🌱
 
-> [!tip]
-> Whenever working on real projects, use [GitHub Actions](https://github.com/features/actions) to setup automated testing for your projects.
+Btw, it seems the teachers have also been active.
+Looks like they submitted some bugs and requests! Perfect! 🚀
 
-### :keyboard: Activity: Review and merge the AI solution
+Now, let's use our MCP server's tools and Copilot to do a bit of triage and get some work done.
 
-1. Examine the [pull request]({{{pull_request_url}}}) Copilot helped you create.
+### :keyboard: Activity: Easily implement an important issue
 
-   > ✨ **Bonus:** If your access is sufficient, you can ask Copilot to review your code.
+1. Ask Copilot to summarize the important issues.
 
-1. Once you're satisfied with the changes, merge the pull request
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Please search the issues find the top 2 most important.
+   > If they have comments, please provide summaries.
+   > ```
 
-   >  🪧 **Note:** If you are not satisfied, go back to the codespace and work with Copilot to introduce the changes. Remember, coding is an iterative process.
+2. Review the suggested issues. If Copilot didn't give a specific recommendation, try providing some feedback to narrow the results.
+3. With the list narrow, ask copilot to implement one.
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > #codebase Let's do the first one. Add a comment that I am working on it and
+   > assign it to me. Start a new branch, make the changes, then push them
+   > and start a pull request. Make sure to link this issue and the new PR.
+   > ```
+
+   > ⚠️ **Warning:** Always verify the the actions Copilot is asking to perform, especially with the extrnal abilities provided by an MCP server.
+
+4. Follow Copilot's recommendations to make the changes and create a pull request.
+
+   > 💡 **Tip:** Copilot is conversational and iterative. You can always pause and provide additional guidance. Pausing is also useful if Copilot is acting slow. The servers might be busy! 🕝
+
+5. Once the pull request is created, Mona will start checking your work. Give her a moment and keep watch of the comments. You will see her respond with progress info and the next step!
+
+<details>
+<summary>Having trouble?</summary><br/>
+
+- If tools are not being requested, verify your MCP configuration is correct.
+- If Copilot cannot retrieve results, verify you are using this Codespace's token or a Personal Access Token (PAT) with appropriate permissions. By default, the codespace token we are using only has access to this repository.
+
+</details>
