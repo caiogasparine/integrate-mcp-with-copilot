@@ -77,7 +77,7 @@ Let's start up our development environment and refamiliarize ourself with the ex
 
    <img width="350" alt="ports tab" src="https://github.com/user-attachments/assets/8d24d6b5-202d-4109-8174-2f0d1e4d8d44" />
 
-   ![Screenshot of Mergington High School WebApp](https://github.com/user-attachments/assets/472398fd-1aa1-4084-b443-4e242deb30d9)
+   ![Screenshot of Mergington High School WebApp](https://github.com/user-attachments/assets/5cb88d53-d948-457e-9f4b-403d697fa93a)
 
    </details>
 
