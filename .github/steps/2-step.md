@@ -72,7 +72,10 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > I like it. Let's create issues for these.
    > ```
 
-1. Let's see if the author has other projects we might be interested in.
+9. Copilot will ask for permssion to create issues on your repository. Click **Continue** for each new issue.
+
+   <img width="250" alt="request permission dialog" src="https://github.com/user-attachments/assets/52635294-950a-4168-b71e-498eb769f3af" />
+
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
