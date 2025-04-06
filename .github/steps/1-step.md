@@ -61,6 +61,15 @@ Let's start up our development environment and refamiliarize ourself with the ex
 
    </details>
 
+   <details>
+   <summary>🤷 Having trouble?</summary><br/>
+
+   If the **Run and Debug** area is empty, try reloading VS Code: Open the command palette (`Ctrl`+`Shift`+`P`) and search for `Developer: Reload Window`.
+
+   <img width="300" alt="empty run and debug panel" src="https://github.com/user-attachments/assets/0dbf1407-3a97-401a-a630-f462697082d6" />
+
+   </details>
+
 1. Use the **Ports** tab to find the webpage address, open it, and verify it is running.
 
    <details>
