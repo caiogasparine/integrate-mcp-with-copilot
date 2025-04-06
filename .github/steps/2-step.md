@@ -26,6 +26,7 @@ Isn't that cool?! Now let's do it! 👩‍🚀
 
 1. Close any open files. This will help reduce unnecessary context.
 
+2. Ensure the **Copilot Chat** panel is open and **Agent** mode is selected. Verify the MCP server tools are also still available.
 
 1. Ask copilot to search github for projects similar to this one.
 
