@@ -1,11 +1,22 @@
 ## Step 1: Introduction to MCP and environment setup
 
-In this exercise, you'll learn how to use Model Context Protocol (MCP) to connect GitHub Copilot to your entire toolchain.
-This integration allows you to solve problems across platforms without leaving your code editor. **Less context switching, more coding**.
+<img width="150" align="right" alt="copilot logo" src="https://github.com/user-attachments/assets/4d22496d-850b-4785-aafe-11cba03cd5f2" />
+
+Welcome to another Skills exercise!
+
+In the [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot) exercise, we were introduced to the Mergington High School's extracurricular activities website, which allowed students to sign up for events.
+
+And now we have a problem... but.. it's a good one! More teachers are asking to to use it! 🎉
+
+Our fellow teachers have lots of ideas but we can't seem to keep up with all the requests! 😮 To with this issue, lets give GitHub Copilot an upgrade by enabling Model Context Protocol (MCP). To be more specific, we will add the GitHub MCP server, which will enable a combined workflow of issue management and website upgrades. 🧑‍🚀
+
+Lets get started!
 
 ### What is Model Context Protocol (MCP)?
 
-[Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) is often referred to as "USB-C for AI" - a universal connector that allows GitHub Copilot to seamlessly interact with external tooling.
+[Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) is often referred to as "USB-C for AI" - a universal connector that allows GitHub Copilot (and other AI tools) to seamlessly interact with other services.
+
+Essentially, it is a way to describe the capabilities and requirements of a service, so AI tools can easily determine what methods to use and to accurately provide the parameters. An MCP server is the host for that providing that interface.
 
 ```mermaid
 graph LR
@@ -30,62 +41,84 @@ graph LR
 
 ### :keyboard: Activity: Get to know your environment
 
-Let's start up our development environment and familiarize with the environment.
-
-We are using the same web application as in the [Getting Started with Copilot](https://github.com/skills/getting-started-with-github-copilot) exercise - the Mergington High School's extracurricular activities website.
+Let's start up our development environment and refamiliarize ourself with the extracurricular activity application.
 
 1. Right-click the below button to open the **Create Codespace** page in a new tab. Use the default configuration.
 
    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/{{full_repo_name}}?quickstart=1)
 
-1. Validate the Copilot Chat and Python extensions are installed and enabled
-   <details>
-   <summary>:camera_flash: See screenshot</summary><br/>
+1. Validate the **Copilot Chat** and **Python** extensions are installed and enabled.
 
-   <img width="350" alt="copilot extension for VS Code" src="https://github.com/user-attachments/assets/ef1ef984-17fc-4b20-a9a6-65a866def468" />
+   <img width="300" alt="copilot extension for VS Code" src="https://github.com/user-attachments/assets/ef1ef984-17fc-4b20-a9a6-65a866def468" /><br/>
+   <img width="300" alt="python extension for VS Code" src="https://github.com/user-attachments/assets/3040c0f5-1658-47e2-a439-20504a384f77" />
 
-   <img width="350" alt="python extension for VS Code" src="https://github.com/user-attachments/assets/3040c0f5-1658-47e2-a439-20504a384f77" />
-   </details>
-
-1. In the left sidebar, select the `Run and Debug` tab and then press the **Start Debugging** icon.
+1. Verify our application runs before modification. In the left sidebar, select the **Run and Debug** tab and then press the **Start Debugging** icon.
 
    <details>
-   <summary>:camera_flash: See screenshot</summary><br/>
+   <summary>📸 Show screenshot</summary><br/>
 
    <img width="300" alt="run and debug" src="https://github.com/user-attachments/assets/50b27f2a-5eab-4827-9343-ab5bce62357e" />
 
    </details>
 
-1. Throughout the exercise, you can access the website link from the `ports` tab on port `8000`.
+1. Use the **Ports** tab to find the webpage address, open it, and verify it is running.
 
    <details>
-   <summary>:camera_flash: See screenshot</summary><br/>
-       
-    <img width="200" alt="ports tab" src="https://github.com/user-attachments/assets/bd25ed3c-0656-448c-b809-edc10c0ab6cf" />
+   <summary>📸 Show screenshot</summary><br/>
 
+   <img width="350" alt="ports tab" src="https://github.com/user-attachments/assets/8d24d6b5-202d-4109-8174-2f0d1e4d8d44" />
+
+   ![Screenshot of Mergington High School WebApp](https://github.com/user-attachments/assets/472398fd-1aa1-4084-b443-4e242deb30d9)
 
    </details>
 
-### :keyboard: Activity: Set up a MCP server for your project
+### :keyboard: Activity: Add the GitHub MCP server
 
-1. Inside your codespace, create a new file named `mcp.json` in the `.vscode` directory and paste the following contents:
+Since we are using GitHub, we have asked our fellow teachers to submit their ideas and bugs as issues (instead of email).
+
+1. Ensure you are in your codespace.
+1. Open the **Copilot Chat** panel and verify **Agent** mode is selected.
+
+   <img width="200" alt="image" src="https://github.com/user-attachments/assets/201e08ab-14a0-48bf-824e-ba4f8f43f8ab" />
+
+   <details>
+   <summary>Agent mode missing?</summary><br/>
+
+   - Verify VS Code is at least `v1.99.0`.
+   - Verify the Copilot extension is at least `v1.296.0`.
+   - Check if Agent mode is enabled in your user or workspace settings.
+
+      <img width="300" alt="image" src="https://github.com/user-attachments/assets/407a79dd-707e-471b-b56b-1938aece4ad8" />
+
+   </details>
+
+1. Open the Command Palette (`Ctrl` + `Shift` + `P`) and search for `MCP: Add server..`.
+1. Follow the prompts using these settings and a `.vscode/mcp.json` file will be created.
+
+   - **Type:** `NPM Package`
+   - **Name:** `@modelcontextprotocol/server-github`
+   - **Personal Access Token:** (skip)
+   - **Location:** `Workspace Settings`
+
+1. Entering a hard-coded token is not safe, so let's switch to using an input. Replace the token placeholder with an input variable.
+
+   📄 **.vscode/mcp.json**
 
    ```json
-   // .vscode/mcp.json
    {
      "servers": {
        "github": {
          "command": "npx",
          "args": ["-y", "@modelcontextprotocol/server-github"],
          "env": {
-           "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:githubToken}"
+           "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:GITHUB_TOKEN}"
          }
        }
      },
      "inputs": [
        {
          "type": "promptString",
-         "id": "githubToken",
+         "id": "GITHUB_TOKEN",
          "description": "Enter your GitHub personal access token",
          "password": true
        }
@@ -93,56 +126,59 @@ We are using the same web application as in the [Getting Started with Copilot](h
    }
    ```
 
-1. In a moment, when you start the server - you will be prompted to provide a GitHub Token. Print it out in the terminal and copy it to your clipboard (`CTRL+C`).
+   <!-- > [!TIP]
+   > You might also try passing environment variables directly. -->
+
+   <!--
+   <details>
+   <summary>Why not ask Copilot to do this?</summary><br/>
+
+   Great idea! Here is a prompt you can try next time:
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Add the `@modelcontextprotocol/server-github` MCP server to this project.
+   > Use an input for the PAT instead of hard coding it.
+   > ```
+
+   </details>
+   -->
+
+1. Expand the VS Code terminal panel. Run the following command to view and **make a copy** of your codespace's GitHub Token.
 
    ```bash
       echo $GITHUB_TOKEN
    ```
 
-1. Back in the `.vscode/mcp.json` file you should see `Start` button show up like so:
+1. In the `.vscode/mcp.json` file, click the `Start` button and provide the token. This has just informed GitHub Copilot of the MCP server's capabilities.
 
    ![image](https://github.com/user-attachments/assets/c82a4202-1f4a-4123-ad14-5e33ecd6316c)
 
-1. Click the `Start` button to launch the GitHub MCP server locally. When prompted, paste the GitHub token you copied earlier.
+   ![image](https://github.com/user-attachments/assets/80f3fcda-34a8-486e-95a3-c166e9152b9a)
 
-1. Validate the server is running.
+1. In the Copilot side panel, click the **🛠️ Select Tools...** icon to show the additional capabilities.
 
-   1. The `.vscode/mcp.json` file should show if the server you started is running
+   <img width="250" alt="image" src="https://github.com/user-attachments/assets/95af044c-3f26-4f5c-b933-7630db72eb67" />
 
-      <details>
-      <summary>:camera_flash: See screenshot</summary><br/>
+   <img width="250" alt="image" src="https://github.com/user-attachments/assets/99178d1b-adbe-4cf4-ab9c-3a4d29918a13" />
 
-      ![image](https://github.com/user-attachments/assets/80f3fcda-34a8-486e-95a3-c166e9152b9a)
+1. Commit and push the `.vscode/mcp.json` file to the `main` branch.
 
-      </details>
+   > 🪧 **Note:** Pushing directly to `main` is not a recommended practice. It is only to simplify this exercise.
 
-   1. You should see additional tools available in Copilot Agent Mode
+1. Now that your MCP server configuration is pushed to GitHub, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
 
-      <details>
-      <summary>:camera_flash: See screenshot</summary><br/>
+1. (optional) The next steps will interact with issues. If you would like to avoid notification emails, you can unwatch the repository by click this button.
 
-      ![image](https://github.com/user-attachments/assets/95af044c-3f26-4f5c-b933-7630db72eb67)
-
-      </details>
-
-   1. You can use the VSCode command palette `Ctrl+Shift+P` or `Command+Shift+P` on Mac.
-      Start typing `> MCP` to see different MCP commands, such as listing active servers.
-
-         <details>
-         <summary>:camera_flash: See screenshot</summary><br/>
-
-      ![image](https://github.com/user-attachments/assets/6a127ac2-a6dc-495b-bc5f-d52425f709f8)
-
-         </details>
-
-1. Commit and push the `.vscode/mcp.json` file to the `main` branch
+   <img width="300" alt="image" src="https://github.com/user-attachments/assets/c320d112-7291-41f8-8fe1-4b1f2a949871" />
 
 <details>
 <summary>Having trouble?</summary><br/>
 
 Make sure you:
 
-- Properly copied the `json` contents above to `.vscode/mcp.json` file
-- Pushed your changes to the `main` branch
+- Your `.vscode/mcp.json` file is similar to the example provided.
+- You pushed the changes to the `main` branch.
 
 </details>
