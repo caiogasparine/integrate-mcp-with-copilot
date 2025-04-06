@@ -17,7 +17,7 @@ While AI assistants like GitHub Copilot can dramatically improve productivity, i
 
 2. Once you're satisfied with the changes, merge the pull request and verify the linked issue also closed.
 
-3. Return to VS code and active **Copilot Chat** session.
+3. Return to VS code and the active **Copilot Chat** session.
 
    > 🪧 **Tip:** If you previously clicked Done and need to return to a previous conversation, use the **Show Chats** button at the top of the Copilot Chat panel.
 
