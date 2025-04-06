@@ -59,7 +59,7 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > I like it. Let's create issues for these. Please put them in the chriswblake/playground repo.
+   > I like it. Let's create issues for these.
    > ```
 
 1. Let's see if the author has other projects we might be interested in.
