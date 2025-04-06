@@ -1,11 +1,12 @@
 name: Step 2
 
 on:
-  pull_request:
-    branches:
-      - main
-    paths:
-      - "src/**"
+  issues:
+    types: [opened]
+
+concurrency:
+  group: "step-2"
+  cancel-in-progress: true
 
 permissions:
   contents: read
@@ -48,31 +49,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Get changed files
-        id: changed-files
-        uses: tj-actions/changed-files@v46.0.3
-
-      - name: Build message - step mistake
-        id: build-message-step-mistake
-        uses: skills/action-text-variables@v1
-        with:
-          template-file: exercise-toolkit/markdown-templates/step-feedback/step-mistake.md
-          template-vars: |
-            feedback_message="Please update the High School Activities Database in **src/app.py file to complete this step."
-
-      - name: Check for changes in app.py
-        env:
-          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COMMENT_BODY: ${{ steps.build-message-step-mistake.outputs.updated-text }}
-        run: |
-          if ! echo "${ALL_CHANGED_FILES}" | grep -q "src/app.py"; then
-            echo "src/app.py was not modified, commenting on the exercise issue"
-            gh issue comment "$ISSUE_URL" \
-              --body "$COMMENT_BODY" \
-              --edit-last
-            exit 1
-          fi
+      # The trigger is enough. We just want to see that
+      # new issues were created.
 
       - name: Build message - step finished
         id: build-message-step-finish
