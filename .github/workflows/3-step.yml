@@ -60,13 +60,28 @@ jobs:
           template-vars: |
             feedback_message="Please use Copilot to implement an issue that affects files in the `src` folder."
 
-      - name: Check for changes in app.py
+      - name: Check for changes in src folder
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMENT_BODY: ${{ steps.build-message-step-mistake.outputs.updated-text }}
         run: |
-          if ! echo "${ALL_CHANGED_FILES}" | grep -q "^src/"; then
+          # Show the list of all changed files
+          echo "All changed files: ${ALL_CHANGED_FILES}"
+
+          # Initialize flag
+          has_src_changed=false
+
+          # Check each changed file
+          for file in ${ALL_CHANGED_FILES}; do
+            if [[ $file == src/* ]]; then
+              has_src_changed=true
+              break
+            fi
+          done
+
+          # If no src changes found, comment and exit
+          if ! $has_src_changed; then
             gh issue comment "$ISSUE_URL" \
               --body "$COMMENT_BODY" \
               --edit-last
