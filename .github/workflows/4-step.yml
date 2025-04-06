@@ -9,9 +9,10 @@ permissions:
   actions: write
   issues: write
 
-# concurrency:
-#   group: ${{ github.workflow }}
-#   cancel-in-progress: true
+# Prevent running multiple times if multiple comments are created
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
 
 env:
   REVIEW_FILE: ".github/steps/x-review.md"
@@ -37,6 +38,9 @@ jobs:
           repository: skills/exercise-toolkit
           path: exercise-toolkit
           ref: v0.1.0
+
+      # The trigger is enough. We just want to see that
+      # comment was added.
 
       - name: Update comment - step finished - final review next
         run: |
@@ -85,4 +89,3 @@ jobs:
         run: gh workflow disable "${{github.workflow}}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
