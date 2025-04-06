@@ -38,7 +38,7 @@ Isn't that cool?! Now let's do it! 👩‍🚀
 
 4. When an MCP tool is required, Copilot will ask permission. Click **Continue**.
 
-   📸 📸📸📸📸 Insert screenshot of request to run tool
+   <img width="250" alt="request permission dialog" src="https://github.com/user-attachments/assets/d14ea944-5443-4b8a-a4d2-ae677fdb274c" />
 
 5. Ask Copilot to describe one of the projects.
 
