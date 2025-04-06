@@ -14,12 +14,21 @@ Now, let's use our MCP server's tools and Copilot to do a bit of triage and get 
 
 1. Ensure the **Copilot Chat** panel is open and **Agent** mode is selected. Verify the MCP server tools are also still available.
 
+2. Ask Copilot about the open issues.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Please search the issues find the top 2 most important.
-   > If they have comments, please provide summaries.
+   > How many open issues are there?
+   > ```
+
+3. Ask Copilot to summarize the important issues.
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Oh no. That's too many for me! Please get the list of issues,
+   > review the descriptions and comments, and pick the top 3 most important.
    > ```
 
 2. Review the suggested issues. If Copilot didn't give a specific recommendation, try providing some feedback to narrow the results.
