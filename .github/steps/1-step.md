@@ -95,7 +95,7 @@ Since we are using GitHub, we have asked our fellow teachers to submit their ide
 
    - Verify VS Code is at least `v1.99.0`.
    - Verify the Copilot extension is at least `v1.296.0`.
-   - Check if Agent mode is enabled in your user or workspace settings.
+   - Check if Agent mode is enabled in your [user or workspace settings](https://code.visualstudio.com/docs/configure/settings#_workspace-settings).
 
       <img width="300" alt="image" src="https://github.com/user-attachments/assets/407a79dd-707e-471b-b56b-1938aece4ad8" />
 
