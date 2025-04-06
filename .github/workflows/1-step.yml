@@ -86,11 +86,22 @@ jobs:
 
                 // Load the file content
                 const fullPath = path.join(dir, file);
-                const body = fs.readFileSync(fullPath, 'utf8');
+                const fileContent = fs.readFileSync(fullPath, 'utf8');
 
-                // Get the issue title from the first line 
-                const title = body.split('\n')[0].replace('#', '').trim();
-
+                // Split the file content into title, body, and comments
+                const title = fileContent.split('\n')[0].replace('#', '').trim();
+                const body = fileContent.split('\n').slice(1).join('\n').split('----- COMMENTS -----')[0].trim();
+                let comments = fileContent.split('----- COMMENTS -----').slice(1).join('\n').trim().split('\n')
+                comments = comments.filter(comment => comment.trim() !== '');             
+                
+                // Log the content
+                // console.log(`\n\Title: ${title}`);
+                // console.log(`Body:\n${body}`);
+                // for (const comment of comments) {
+                //   console.log(`Comment: '${comment.trim()}'`);
+                // }
+                // console.log(`\n`);
+              
                 // Create the issue
                 const issue = await github.rest.issues.create({
                   owner: context.repo.owner,
@@ -100,7 +111,17 @@ jobs:
                   labels: [label],
                 });
 
-                console.log(`Created issue: ${title}, URL: ${issue.data.html_url}`);
+                // Add comments
+                for (const comment of comments) {
+                  await github.rest.issues.createComment({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: issue.data.number,
+                    body: comment,
+                  });
+                }
+
+                console.log(`Created issue: ${title}, URL: ${issue.data.html_url} with ${comments.length} comments.`);
               }
             };
 
@@ -141,7 +162,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_BODY: ${{ steps.build-comment.outputs.updated-text }}
-
 
       - name: Create comment - watching for progress
         run: |
