@@ -31,8 +31,9 @@ Now, let's use our MCP server's tools and Copilot to do a bit of triage and get 
    > review the descriptions and comments, and pick the top 3 most important.
    > ```
 
-2. Review the suggested issues. If Copilot didn't give a specific recommendation, try providing some feedback to narrow the results.
-3. With the list narrow, ask copilot to implement one.
+4. Review the suggested issues. If Copilot didn't give a specific recommendation, try providing some feedback to narrow the results.
+
+5. With the list narrowed, ask copilot to implement one.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -42,13 +43,15 @@ Now, let's use our MCP server's tools and Copilot to do a bit of triage and get 
    > and start a pull request. Make sure to link this issue and the new PR.
    > ```
 
-   > ⚠️ **Warning:** Always verify the the actions Copilot is asking to perform, especially with the extrnal abilities provided by an MCP server.
+   > ⚠️ **Warning:** Always verify the the actions Copilot is asking to perform, especially with the external abilities provided by an MCP server.
 
-4. Follow Copilot's recommendations to make the changes and create a pull request.
+6. Follow Copilot's recommendations to make the changes and create a pull request.
 
-   > 💡 **Tip:** Copilot is conversational and iterative. You can always pause and provide additional guidance. Pausing is also useful if Copilot is acting slow. The servers might be busy! 🕝
+   - You can press the **Keep** buttons as changes are made. However, do **NOT** press the **Done** button, which will clear the context.
+   - When the changes are finished, you can optionally preview the website to see if they worked. **This won't be checked.**
+   - Remember, Copilot is conversational and iterative. You can always pause and provide additional guidance. Pausing is also useful if Copilot is acting slow. The servers might be busy! 🕝
 
-5. Once the pull request is created, Mona will start checking your work. Give her a moment and keep watch of the comments. You will see her respond with progress info and the next step!
+7. Once the pull request is created, Mona will start checking your work. Give her a moment and keep watch of the comments. You will see her respond with progress info and the next step!
 
 <details>
 <summary>Having trouble?</summary><br/>
