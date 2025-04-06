@@ -135,25 +135,6 @@ Since we are using GitHub, we have asked our fellow teachers to submit their ide
    }
    ```
 
-   <!-- > [!TIP]
-   > You might also try passing environment variables directly. -->
-
-   <!--
-   <details>
-   <summary>Why not ask Copilot to do this?</summary><br/>
-
-   Great idea! Here is a prompt you can try next time:
-
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > Add the `@modelcontextprotocol/server-github` MCP server to this project.
-   > Use an input for the PAT instead of hard coding it.
-   > ```
-
-   </details>
-   -->
-
 1. Expand the VS Code terminal panel. Run the following command to view and **make a copy** of your codespace's GitHub Token.
 
    ```bash
