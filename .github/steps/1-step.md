@@ -141,7 +141,7 @@ Since we are using GitHub, we have asked our fellow teachers to submit their ide
       echo $GITHUB_TOKEN
    ```
 
-1. In the `.vscode/mcp.json` file, click the `Start` button and provide the token. This has just informed GitHub Copilot of the MCP server's capabilities.
+1. In the `.vscode/mcp.json` file, click the **Start** button and provide the token. This has just informed GitHub Copilot of the MCP server's capabilities.
 
    ![image](https://github.com/user-attachments/assets/c82a4202-1f4a-4123-ad14-5e33ecd6316c)
 
