@@ -48,6 +48,14 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > Please look at the code for the 3rd option and give me a detailed description of the features.
    > ```
 
+6. (optional) You might pick a project that is still young. If that happens, Copilot might say there isn't much to describe. Instead just ask to review a different one. Example:
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Ok. How about the first one then?
+   > ```
+
 7. Use Copilot to compare and generate ideas for enhancements.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
