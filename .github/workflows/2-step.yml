@@ -4,8 +4,9 @@ on:
   issues:
     types: [opened]
 
+# Prevent running multiple times if multiple issues are created quickly
 concurrency:
-  group: "step-2"
+  group: ${{ github.workflow }}
   cancel-in-progress: true
 
 permissions:
