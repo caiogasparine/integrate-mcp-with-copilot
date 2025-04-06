@@ -28,7 +28,7 @@ Isn't that cool?! Now let's do it! 👩‍🚀
 
 2. Ensure the **Copilot Chat** panel is open and **Agent** mode is selected. Verify the MCP server tools are also still available.
 
-1. Ask copilot to search github for projects similar to this one.
+3. Ask copilot to search github for projects similar to this one.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -36,11 +36,11 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > Are their any other repositories for organizing extra curricular actitivities?
    > ```
 
-1. When an MCP tool is required, Copilot will ask permission to use it.
+4. When an MCP tool is required, Copilot will ask permission. Click **Continue**.
 
    📸 📸📸📸📸 Insert screenshot of request to run tool
 
-1. Ask Copilot to describe one of the projects.
+5. Ask Copilot to describe one of the projects.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -48,7 +48,7 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > Please look at the code for the 3rd option and give me a detailed description of the features.
    > ```
 
-1. Use Copilot to compare and generate ideas for enhancements.
+7. Use Copilot to compare and generate ideas for enhancements.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -56,7 +56,7 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > Which of these features would be new for our project?
    > ```
 
-1. Nice! Let's have Copilot create issues to save these ideas.
+8. Nice! Let's have Copilot create issues to save these ideas.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
