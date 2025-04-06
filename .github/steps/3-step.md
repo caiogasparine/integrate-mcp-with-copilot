@@ -12,7 +12,8 @@ Now, let's use our MCP server's tools and Copilot to do a bit of triage and get 
 
 ### :keyboard: Activity: Easily implement an important issue
 
-1. Ask Copilot to summarize the important issues.
+1. Ensure the **Copilot Chat** panel is open and **Agent** mode is selected. Verify the MCP server tools are also still available.
+
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
