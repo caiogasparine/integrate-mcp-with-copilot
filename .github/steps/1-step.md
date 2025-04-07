@@ -81,8 +81,6 @@ Before we dive into MCP, let's start up our development environment and refamili
 
 ### :keyboard: Activity: Add the GitHub MCP server
 
-Since we are using GitHub, we have asked our fellow teachers to submit their ideas and bugs as issues (instead of email).
-
 1. Inside your codespace, open the **Copilot Chat** panel and verify **Agent** mode is selected.
 
    <img width="200" alt="image" src="https://github.com/user-attachments/assets/201e08ab-14a0-48bf-824e-ba4f8f43f8ab" />
