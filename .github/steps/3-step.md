@@ -3,7 +3,7 @@
 Great workd doing that research and finding a potential collaboration opportunity.
 Not only did we find some new ideas to help organize extracurricular activies, but we did all that quickly too.
 
-Plenty of time to focus on the fun stuff, teaching our awesome students! 🌱
+Plenty of time to focus on the fun stuff, like teaching our awesome students! 🌱
 
 Btw, it seems the teachers have also been active.
 Looks like they submitted some bugs and requests! Perfect! 🚀
