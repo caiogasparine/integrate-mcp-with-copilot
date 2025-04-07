@@ -19,8 +19,10 @@ Now, let's use our MCP server's tools and Copilot to do a bit of triage and get 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > How many open issues are there?
+   > #codebase How many open issues are there?
    > ```
+
+   > :placard: **Note:** In our tests, we found that Copilot sometimes gets confused about the repository owner here. We chose to add `#codebase` to reduce this ambiguity and make the lesson smoother.
 
 3. Ask Copilot to summarize the important issues.
 
@@ -33,23 +35,18 @@ Now, let's use our MCP server's tools and Copilot to do a bit of triage and get 
 
 4. Review the suggested issues. If Copilot didn't give a specific recommendation, try providing some feedback to narrow the results.
 
-5. With the list narrowed, ask copilot to implement one.
+5. With the list narrowed, ask copilot to implement an issue. **Mona won't grade if the changes work, just that an attempt was made.**
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > #codebase Let's do the first one. Add a comment that I am working on it and
-   > assign it to me. Start a new branch, make the changes, then push them
-   > and start a pull request. Make sure to link this issue and the new PR.
+   > #codebase Let's do the first one. Follow these steps:
+   > 1. Checkout a new local branch for making our changes.
+   > 2. Make the changes then confirm with me that they look correct.
+   > 3. Push the changes and start a pull request. Make sure to link this issue and the new PR.
    > ```
 
    > ⚠️ **Warning:** Always verify the the actions Copilot is asking to perform, especially with the external abilities provided by an MCP server.
-
-6. Follow Copilot's recommendations to make the changes and create a pull request.
-
-   - You can press the **Keep** buttons as changes are made. However, do **NOT** press the **Done** button, which will clear the context.
-   - When the changes are finished, you can optionally preview the website to see if they worked. **This won't be checked.**
-   - Remember, Copilot is conversational and iterative. You can always pause and provide additional guidance. Pausing is also useful if Copilot is acting slow. The servers might be busy! 🕝
 
 7. Once the pull request is created, Mona will start checking your work. Give her a moment and keep watch of the comments. You will see her respond with progress info and the next step!
 
