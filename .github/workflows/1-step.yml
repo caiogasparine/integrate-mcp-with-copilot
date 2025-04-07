@@ -61,13 +61,14 @@ jobs:
 
   create_issues:
     name: Create issues
-    # needs: [check_step_work]
+    needs: [check_step_work]
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # TODO: replace with https://github.com/marketplace/actions/create-an-issue
       - name: Create issues
         uses: actions/github-script@v6
         with:
@@ -92,8 +93,8 @@ jobs:
                 const title = fileContent.split('\n')[0].replace('#', '').trim();
                 const body = fileContent.split('\n').slice(1).join('\n').split('----- COMMENTS -----')[0].trim();
                 let comments = fileContent.split('----- COMMENTS -----').slice(1).join('\n').trim().split('\n')
-                comments = comments.filter(comment => comment.trim() !== '');             
-                
+                comments = comments.filter(comment => comment.trim() !== '');
+
                 // Log the content
                 // console.log(`\n\Title: ${title}`);
                 // console.log(`Body:\n${body}`);
@@ -101,7 +102,7 @@ jobs:
                 //   console.log(`Comment: '${comment.trim()}'`);
                 // }
                 // console.log(`\n`);
-              
+
                 // Create the issue
                 const issue = await github.rest.issues.create({
                   owner: context.repo.owner,
