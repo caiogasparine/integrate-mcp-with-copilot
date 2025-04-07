@@ -89,20 +89,5 @@ Isn't that cool?! Now let's do it! 👩‍🚀
 
     > 🪧 **Note:** We explicitly asked about the owner to help guide Copilot with the relative reference.
 
-### 💡 Important Notes
-
-The Model Context Protocal (MCP) is quickly evolving. Many servers, including the [Official GitHub MCP server](https://github.com/github/github-mcp-server) are in development and do not have full parity with their stable APIs.
-
-Prompt examples that aren't possible (yet):
-
-```prompt
-Please list the top contributors in the discussions area
-for the "Skills" GitHub organization.
-```
-
-```prompt
-Generate a summary of recent work for each follower in the
-'Skills' GitHub organization. Use those reviews to identify
-developers that might produce educational and training conent.
-Give them each a ranking score and save in a CSV file.
-```
+> [!NOTE]
+> The Model Context Protocal (MCP) landscape is quickly evolving. Many servers, including the [Official GitHub MCP server](https://github.com/github/github-mcp-server) are in active development and do not have full parity with their stable APIs.
