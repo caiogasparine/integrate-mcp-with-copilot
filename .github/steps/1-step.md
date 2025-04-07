@@ -2,8 +2,6 @@
 
 <img width="150" align="right" alt="copilot logo" src="https://github.com/user-attachments/assets/4d22496d-850b-4785-aafe-11cba03cd5f2" />
 
-Welcome to another Skills exercise!
-
 In the [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot) exercise, we were introduced to the Mergington High School's extracurricular activities website, which allowed students to sign up for events.
 
 And now we have a problem... but.. it's a good one! More teachers are asking to to use it! 🎉
