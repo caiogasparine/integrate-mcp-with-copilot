@@ -9,17 +9,17 @@ While AI assistants like GitHub Copilot can dramatically improve productivity, i
 
 ### :keyboard: Activity: Review and merge the AI solution
 
-1. Examine the new pull request Copilot helped create. **Tip:** open it in a new window.
+1. Open the new pull request created by Copilot in a new tab.
 
    [![Examine the pull request](https://img.shields.io/badge/-Open%20Pull%20Request-1f883d?logo=github)]({{{pull_request_url}}})
 
    > ✨ **Bonus:** If your Copilot subcription provides it, you can also use a specialised version of Copilot to [review the changes](https://docs.github.com/en/copilot/using-github-copilot/code-review/using-copilot-code-review?tool=webui).
 
-2. Once you're satisfied with the changes, merge the pull request and verify the linked issue also closed.
+2. Review the changes. When you are satisfied, merge the pull request and verify the linked issue also closed.
 
 3. Return to VS code and the active **Copilot Chat** session.
 
-   > 🪧 **Tip:** If you previously clicked Done and need to return to a previous conversation, use the **Show Chats** button at the top of the Copilot Chat panel.
+   > 🪧 **Tip:** If you previously clicked Done and need to return to a previous conversation, use the **Show Chats** button at the top of the Copilot Chat panel to restore it.
 
 4. Ask Copilot to add a comment to the issue we just finished, and to say thanks for the comments and ideas.
 
