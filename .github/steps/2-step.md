@@ -72,16 +72,6 @@ Isn't that cool?! Now let's do it! 👩‍🚀
 
 10. With the new issues created, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
 
-11. (Optional) Let's see if the author has other projects we might be interested in.
-
-    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-    >
-    > ```prompt
-    > What was the name of the owner of the repo we just reviewed?
-    > Search GitHub and give me a summary of other projects they have recently worked on.
-    > ```
-
-    > 🪧 **Note:** We explicitly asked about the owner to help guide Copilot with the relative reference.
 
 > [!NOTE]
 > The Model Context Protocal (MCP) landscape is quickly evolving. Many servers, including the [Official GitHub MCP server](https://github.com/github/github-mcp-server) are in active development and do not have full parity with their stable APIs.
