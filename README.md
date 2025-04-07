@@ -1,26 +1,26 @@
 # Integrate MCP with GitHub Copilot
 
-_Learn how to integrate Model Context Protocol (MCP) with GitHub Copilot in less than an hour._
+_Learn how to give GitHub Copilot more tools to expand the capabilities of your development workflow. All in less than an hour!_
 
 ## Welcome
 
 - **Who is this for**: Developers looking to enhance their AI-assisted workflows, GitHub Copilot users, and AI enthusiasts.
-- **What you'll learn**: We'll introduce MCP basics, GitHub MCP server setup, and integration with Copilot Agent Mode.
-- **What you'll build**: You will fix a bug that was reported on your website's repository.
+- **What you'll learn**: We'll introduce MCP basics, a GitHub MCP server setup, and integration with Copilot Agent Mode.
+- **What you'll build**: A mixed development workflow that uses GitHub Copilot to manage issues while upgrading the extra curricular activities website for Mergington High School.
 - **Prerequisites**: [Getting Started with Copilot](https://github.com/skills/getting-started-with-github-copilot) Exercise
 - **How long**: This exercise takes less than one hour to complete.
 
 In this exercise, you will:
 
-1. Configure a GitHub MCP server
-2. Integrate MCP with GitHub Copilot Agent Mode
-3. Learn how to use MCP Servers to supercharge your workflow.
+1. Integrate a GitHub MCP server with GitHub Copilot.
+2. Delegate Copilot to research similar projects and open issues.
+3. Ask Copilot to find an important issue and implement it from idea to pull request.
+4. Add comments to a recently closed issue.
 
 ### How to start this exercise
 
 > [!IMPORTANT]
-> This exercise may not explain the Copilot basics that were introduced in the [Getting Started with Copilot](https://github.com/skills/getting-started-with-github-copilot) exercise. If you are new to
-Copilot we recommend starting with that one.
+> This exercise may not explain the Copilot basics that were introduced in the [Getting Started with Copilot](https://github.com/skills/getting-started-with-github-copilot) exercise. If you are new to Copilot we recommend starting with that one.
 
 Simply copy the exercise to your account, then give your favorite Octocat (Mona) **about 20 seconds** to prepare the first lesson, then **refresh the page**.
 
