@@ -33,7 +33,7 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Are their any other repositories for organizing extra curricular actitivities?
+   > Are their any other repositories for organizing extra curricular activities?
    > ```
 
 4. When an MCP tool is required, Copilot will ask permission. Click **Continue**.
