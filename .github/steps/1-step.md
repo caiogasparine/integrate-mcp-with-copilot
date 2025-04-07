@@ -85,8 +85,7 @@ Let's start up our development environment and refamiliarize ourself with the ex
 
 Since we are using GitHub, we have asked our fellow teachers to submit their ideas and bugs as issues (instead of email).
 
-1. Ensure you are in your codespace.
-1. Open the **Copilot Chat** panel and verify **Agent** mode is selected.
+1. Inside your codespace, open the **Copilot Chat** panel and verify **Agent** mode is selected.
 
    <img width="200" alt="image" src="https://github.com/user-attachments/assets/201e08ab-14a0-48bf-824e-ba4f8f43f8ab" />
 
@@ -101,41 +100,40 @@ Since we are using GitHub, we have asked our fellow teachers to submit their ide
 
    </details>
 
-1. Open the Command Palette (`Ctrl` + `Shift` + `P`) and search for `MCP: Add server..`.
-1. Follow the prompts using these settings and a `.vscode/mcp.json` file will be created.
-
-   - **Type:** `NPM Package`
-   - **Name:** `@modelcontextprotocol/server-github`
-   - **Personal Access Token:** (skip)
-   - **Location:** `Workspace Settings`
-
-   > ⚠️ **Warning:** We are using a community developed MCP server. The [official GitHub MCP server](https://github.com/github/github-mcp-server) is still in [public preview](https://docs.github.com/en/get-started/using-github/exploring-early-access-releases-with-feature-preview) and may cause breaking changes.
-
-1. Entering a hard-coded token is not safe, so let's switch to using an input. Replace the token placeholder with an input variable.
+1. Inside your codespace, create a new file named `mcp.json` in the `.vscode` directory and paste the following contents:
 
    📄 **.vscode/mcp.json**
 
    ```json
    {
-     "servers": {
-       "github": {
-         "command": "npx",
-         "args": ["-y", "@modelcontextprotocol/server-github"],
-         "env": {
-           "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:GITHUB_TOKEN}"
-         }
-       }
-     },
      "inputs": [
        {
          "type": "promptString",
-         "id": "GITHUB_TOKEN",
-         "description": "Enter your GitHub personal access token",
+         "id": "github_token",
+         "description": "GitHub Personal Access Token",
          "password": true
        }
-     ]
+     ],
+     "servers": {
+       "github": {
+         "command": "docker",
+         "args": [
+           "run",
+           "-i",
+           "--rm",
+           "-e",
+           "GITHUB_PERSONAL_ACCESS_TOKEN",
+           "ghcr.io/github/github-mcp-server"
+         ],
+         "env": {
+           "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
+         }
+       }
+     }
    }
    ```
+
+   > :placard: **Note:** Entering a hard-coded token is never recommended, you should use input variables or envFiles when an MCP server requires credentials.
 
 1. Expand the VS Code terminal panel. Run the following command to view and **make a copy** of your codespace's GitHub Token.
 
@@ -168,7 +166,7 @@ Since we are using GitHub, we have asked our fellow teachers to submit their ide
 <details>
 <summary>Having trouble?</summary><br/>
 
-Make sure you:
+Make sure:
 
 - Your `.vscode/mcp.json` file is similar to the example provided.
 - You pushed the changes to the `main` branch.
