@@ -19,7 +19,7 @@ jobs:
     if: |
       !github.event.repository.is_template
     name: Start Exercise
-    uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.1.0
+    uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.2.0
     with:
       exercise-title: "Integrate MCP with Copilot"
       intro-message: "Welcome to the exercise! This exercise will help you learn how to integrate the Model Context Protocol (MCP) with GitHub Copilot."
