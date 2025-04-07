@@ -8,7 +8,7 @@ In the [Getting Started with GitHub Copilot](https://github.com/skills/getting-s
 
 And now we have a problem... but.. it's a good one! More teachers are asking to to use it! 🎉
 
-Our fellow teachers have lots of ideas but we can't seem to keep up with all the requests! 😮 To with this issue, lets give GitHub Copilot an upgrade by enabling Model Context Protocol (MCP). To be more specific, we will add the GitHub MCP server, which will enable a combined workflow of issue management and website upgrades. 🧑‍🚀
+Our fellow teachers have lots of ideas but we can't seem to keep up with all the requests! 😮 To fix this issue, lets give GitHub Copilot an upgrade by enabling Model Context Protocol (MCP). To be more specific, we will add the GitHub MCP server, which will enable a combined workflow of issue management and website upgrades. 🧑‍🚀
 
 Lets get started!
 
@@ -16,7 +16,7 @@ Lets get started!
 
 [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) is often referred to as "USB-C for AI" - a universal connector that allows GitHub Copilot (and other AI tools) to seamlessly interact with other services.
 
-Essentially, it is a way to describe the capabilities and requirements of a service, so AI tools can easily determine what methods to use and to accurately provide the parameters. An MCP server is the host for that providing that interface.
+Essentially, it is a way to describe the capabilities and requirements of a service, so AI tools can easily determine what methods to use and to accurately provide the parameters. An MCP server is providing that interface.
 
 ```mermaid
 graph LR
