@@ -39,7 +39,7 @@ graph LR
 
 ### :keyboard: Activity: Get to know your environment
 
-Let's start up our development environment and refamiliarize ourself with the extracurricular activity application.
+Before we dive into MCP, let's start up our development environment and refamiliarize ourself with the extracurricular activity application.
 
 1. Right-click the below button to open the **Create Codespace** page in a new tab. Use the default configuration.
 
