@@ -36,9 +36,9 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > Are there any other repositories for organizing extra curricular activities?
    > ```
 
-1. When an MCP tool is required, Copilot will ask permission. Click **Continue**.
+1. When an MCP tool is required, Copilot will ask for permission. **Verify the request** and modify if necessary, then click **Continue**.
 
-   <img width="250" alt="request permission dialog" src="https://github.com/user-attachments/assets/d14ea944-5443-4b8a-a4d2-ae677fdb274c" />
+   <img width="250" alt="request permission dialog" src="https://github.com/user-attachments/assets/229473af-c206-47a4-b356-943b9c9bd946" />
 
 1. Ask Copilot to describe one of the projects. Explore until you find something you like.
 
