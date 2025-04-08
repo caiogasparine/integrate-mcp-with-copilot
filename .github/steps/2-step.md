@@ -2,7 +2,7 @@
 
 Great work! You just connected your first MCP server to GitHub Copilot! 🎉
 
-🚨 It seems the teachers keep submitting bugs and requests! So many good ideas! We should probably look in to them and start researching for other upgrades.
+🚨 It seems the teachers keep submitting bugs and requests! So many good ideas! We should probably look into them and start researching for other upgrades.
 
 Fortunately, with an MCP server for GitHub, triaging these and even doing some research to get ahead should be pretty quick! 🕵️
 
@@ -28,7 +28,7 @@ Isn't that cool?! Now let's do it! 👩‍🚀
 
 1. Ensure the **Copilot Chat** panel is open and **Agent** mode is selected. Verify the MCP server tools are also still available.
 
-1. Ask copilot to search github for projects similar to this one.
+1. Ask Copilot to search GitHub for projects similar to this one.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -74,4 +74,4 @@ Isn't that cool?! Now let's do it! 👩‍🚀
 
 
 > [!NOTE]
-> The Model Context Protocal (MCP) landscape is quickly evolving. Many servers, including the [Official GitHub MCP server](https://github.com/github/github-mcp-server) are in active development and do not have full parity with their stable APIs.
+> The Model Context Protocol (MCP) landscape is quickly evolving. Many servers, including the [Official GitHub MCP server](https://github.com/github/github-mcp-server) are in active development and do not have full parity with their stable APIs.
