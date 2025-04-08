@@ -33,6 +33,15 @@ Now, let's use our MCP server's tools and Copilot to do a bit of triage and get 
    > review the descriptions and comments, and pick the top 3 most important.
    > ```
 
+   <details>
+   <summary> <b> 💡 Tip:</b> Pre-authorize tool usage</summary><br/>
+
+   If Copilot uses a tool often, you can proactively grant permission for the rest of the conversation session.
+
+   <img width="350" src="https://github.com/user-attachments/assets/d741191e-4d98-489d-92d2-f1069fd6c34e"/>
+
+   </details>
+
 1. Review the suggested issues. If Copilot didn't give a specific recommendation, try providing some feedback to narrow the results.
 
 1. With the list narrowed, ask copilot to implement an issue. **Mona won't grade if the changes work, just that an attempt was made.**
