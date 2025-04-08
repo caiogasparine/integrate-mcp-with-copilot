@@ -17,7 +17,11 @@
         "ms-python.python",
         "ms-python.debugpy",
         "dbaeumer.vscode-eslint"
-      ]
+      ],
+      "settings": {
+        "chat.agent.enabled": true,
+        "chat.mcp.enabled": true
+      }
     }
   }
 }
