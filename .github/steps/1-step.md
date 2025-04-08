@@ -111,7 +111,7 @@ Before we dive into MCP, let's start up our development environment and refamili
            "--rm",
            "-e",
            "GITHUB_PERSONAL_ACCESS_TOKEN",
-           "ghcr.io/github/github-mcp-server"
+           "ghcr.io/github/github-mcp-server:v0.1.1"
          ],
          "env": {
            "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
@@ -141,10 +141,7 @@ Before we dive into MCP, let's start up our development environment and refamili
 
    ![image](https://github.com/user-attachments/assets/62ee9c06-e9d4-44e4-b6df-f93417474af2)
 
-
    ![image](https://github.com/user-attachments/assets/33195908-affe-488f-afef-e759498d1fe8)
-
-
 
 1. In the Copilot side panel, click the **🛠️ Select Tools...** icon to show the additional capabilities.
 
