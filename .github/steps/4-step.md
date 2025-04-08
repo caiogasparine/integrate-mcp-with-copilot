@@ -15,7 +15,7 @@ While AI assistants like GitHub Copilot can dramatically improve productivity, i
 
    > ✨ **Bonus:** If your Copilot subcription provides it, you can also use a specialised version of Copilot to [review the changes](https://docs.github.com/en/copilot/using-github-copilot/code-review/using-copilot-code-review?tool=webui).
 
-1. Review the changes. When you are satisfied, merge the pull request and verify the linked issue also closed.
+1. Review the changes. When you are satisfied, merge the pull request.
 
 1. Return to VS code and the active **Copilot Chat** session.
 
