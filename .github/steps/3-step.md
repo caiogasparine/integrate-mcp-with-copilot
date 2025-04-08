@@ -55,7 +55,7 @@ Now, let's use our MCP server's tools and Copilot to do a bit of triage and get 
    > 3. Push the changes and start a pull request.
    > ```
 
-   > ⚠️ **Warning:** Always verify the the actions Copilot is asking to perform, especially with the external abilities provided by an MCP server.
+   > ⚠️ **Warning:** Always verify the the actions Copilot is asking to perform, especially with the external abilities provided by an MCP server, which probably have no undo option.
 
 1. Once the pull request is created, Mona will start checking your work. Give her a moment and keep watch of the comments. You will see her respond with progress info and the next step!
 
