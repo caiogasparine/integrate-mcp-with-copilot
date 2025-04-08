@@ -14,7 +14,7 @@ Now, let's use our MCP server's tools and Copilot to do a bit of triage and get 
 
 1. Ensure the **Copilot Chat** panel is open and **Agent** mode is selected. Verify the MCP server tools are also still available.
 
-2. Ask Copilot about the open issues.
+1. Ask Copilot about the open issues.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -24,7 +24,7 @@ Now, let's use our MCP server's tools and Copilot to do a bit of triage and get 
 
    > :placard: **Note:** In our tests, we found that Copilot sometimes gets confused about the repository owner here. We chose to add `#codebase` to reduce this ambiguity and make the lesson smoother.
 
-3. Ask Copilot to summarize the important issues.
+1. Ask Copilot to summarize the important issues.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -33,9 +33,9 @@ Now, let's use our MCP server's tools and Copilot to do a bit of triage and get 
    > review the descriptions and comments, and pick the top 3 most important.
    > ```
 
-4. Review the suggested issues. If Copilot didn't give a specific recommendation, try providing some feedback to narrow the results.
+1. Review the suggested issues. If Copilot didn't give a specific recommendation, try providing some feedback to narrow the results.
 
-5. With the list narrowed, ask copilot to implement an issue. **Mona won't grade if the changes work, just that an attempt was made.**
+1. With the list narrowed, ask copilot to implement an issue. **Mona won't grade if the changes work, just that an attempt was made.**
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -48,7 +48,7 @@ Now, let's use our MCP server's tools and Copilot to do a bit of triage and get 
 
    > ⚠️ **Warning:** Always verify the the actions Copilot is asking to perform, especially with the external abilities provided by an MCP server.
 
-7. Once the pull request is created, Mona will start checking your work. Give her a moment and keep watch of the comments. You will see her respond with progress info and the next step!
+1. Once the pull request is created, Mona will start checking your work. Give her a moment and keep watch of the comments. You will see her respond with progress info and the next step!
 
 <details>
 <summary>Having trouble?</summary><br/>

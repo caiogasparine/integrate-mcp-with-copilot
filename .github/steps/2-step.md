@@ -26,9 +26,9 @@ Isn't that cool?! Now let's do it! 👩‍🚀
 
 1. Close any open files inside your codespace. This will help reduce unnecessary context.
 
-2. Ensure the **Copilot Chat** panel is open and **Agent** mode is selected. Verify the MCP server tools are also still available.
+1. Ensure the **Copilot Chat** panel is open and **Agent** mode is selected. Verify the MCP server tools are also still available.
 
-3. Ask copilot to search github for projects similar to this one.
+1. Ask copilot to search github for projects similar to this one.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -36,11 +36,11 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > Are their any other repositories for organizing extra curricular activities?
    > ```
 
-4. When an MCP tool is required, Copilot will ask permission. Click **Continue**.
+1. When an MCP tool is required, Copilot will ask permission. Click **Continue**.
 
    <img width="250" alt="request permission dialog" src="https://github.com/user-attachments/assets/d14ea944-5443-4b8a-a4d2-ae677fdb274c" />
 
-5. Ask Copilot to describe one of the projects. Explore until you find something you like.
+1. Ask Copilot to describe one of the projects. Explore until you find something you like.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -48,7 +48,7 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > Please look at the code for the 3rd option and give me a detailed description of the features.
    > ```
 
-6. Use Copilot to compare and generate ideas for enhancements.
+1. Use Copilot to compare and generate ideas for enhancements.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -56,7 +56,7 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > Please compare these features to our project. Which would be new?
    > ```
 
-7. Nice! Let's have Copilot create issues to save these ideas.
+1. Nice! Let's have Copilot create issues to save these ideas.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -64,13 +64,13 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > I like it. Let's create issues for these.
    > ```
 
-8. Copilot will ask for permission to create issues on your repository. Click **Continue** for each new issue.
+1. Copilot will ask for permission to create issues on your repository. Click **Continue** for each new issue.
 
    <img width="250" alt="request permission dialog" src="https://github.com/user-attachments/assets/52635294-950a-4168-b71e-498eb769f3af" />
 
-9. Since we are done researching, let's finish this chat session to clear the context. At the top of the **Copilot Chat** panel, click the **New Chat** icon (plus sign).
+1. Since we are done researching, let's finish this chat session to clear the context. At the top of the **Copilot Chat** panel, click the **New Chat** icon (plus sign).
 
-10. With the new issues created, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
+1. With the new issues created, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
 
 
 > [!NOTE]
