@@ -11,5 +11,5 @@ Here are my ideas, maybe in a toolbar above the activity cards.
 Obviously, make sure it still looks good on desktop and phone.
 
 ----- COMMENTS -----
-This will be so useful. We should be proactive and do this before the list get's even longer.
+This will be so useful. We should be proactive and do this before the list gets even longer.
 Let's do it! I would love to help out. I just took a coding class. 🤓
