@@ -44,7 +44,7 @@ Now, let's use our MCP server's tools and Copilot to do a bit of triage and get 
 
 1. Review the suggested issues. If Copilot didn't give a specific recommendation, try providing some feedback to narrow the results.
 
-1. With the list narrowed, ask copilot to implement an issue. **Mona won't grade if the changes work, just that an attempt was made.**
+1. With the list narrowed, ask Copilot to implement an issue. **Mona won't grade if the changes work, just that an attempt was made.**
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
