@@ -11,4 +11,4 @@ Now that we have many activities, the list on the left is too long so it is hard
 ----- COMMENTS -----
 I second this idea. I'm having trouble finding my activity.
 100% support this. Nice idea! Looking forward to the update.
-Don't forgot about tablet's too.
+Don't forget about tablet's too.
