@@ -4,7 +4,7 @@ The GitHub Skills activity announced by our principal is missing from the school
 
 Yesterday in the school assembly, the principal announced a new partnership with GitHub to teach students practical coding and collaboration skills. However, when I try to sign up for this activity, I can't find it on the website.
 
-I can see the several other activities, like these, so I think I have access.
+I can see several other activities, like these, so I think I have access.
 
 - ✅ Chess Club
 - ✅ Programming Class
