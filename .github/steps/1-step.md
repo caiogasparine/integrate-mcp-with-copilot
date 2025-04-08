@@ -155,9 +155,8 @@ Before we dive into MCP, let's start up our development environment and refamili
 
 1. Now that your MCP server configuration is pushed to GitHub, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
 
-1. (optional) The next steps will interact with issues. If you would like to avoid notification emails, you can unwatch the repository by click this button.
-
-   <img width="300" alt="image" src="https://github.com/user-attachments/assets/c320d112-7291-41f8-8fe1-4b1f2a949871" />
+> [!NOTE]
+> The next steps will involve creating GitHub issues. If you would like to avoid notification emails, you can unwatch the repository.
 
 <details>
 <summary>Having trouble?</summary><br/>
