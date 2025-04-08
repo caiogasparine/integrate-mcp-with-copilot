@@ -102,14 +102,6 @@ Before we dive into MCP, let's start up our development environment and refamili
 
    ```json
    {
-     "inputs": [
-       {
-         "type": "promptString",
-         "id": "github_token",
-         "description": "GitHub Personal Access Token",
-         "password": true
-       }
-     ],
      "servers": {
        "github": {
          "command": "docker",
@@ -125,7 +117,15 @@ Before we dive into MCP, let's start up our development environment and refamili
            "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
          }
        }
-     }
+     },
+     "inputs": [
+       {
+         "type": "promptString",
+         "id": "github_token",
+         "description": "GitHub Personal Access Token",
+         "password": true
+       }
+     ]
    }
    ```
 
