@@ -4,11 +4,11 @@
 
 In the [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot) exercise, we were introduced to the Mergington High School's extracurricular activities website, which allowed students to sign up for events.
 
-And now we have a problem... but.. it's a good one! More teachers are asking to to use it! 🎉
+And now we have a problem... but.. it's a good one! More teachers are asking to use it! 🎉
 
 Our fellow teachers have lots of ideas but we can't seem to keep up with all the requests! 😮 To fix this issue, lets give GitHub Copilot an upgrade by enabling Model Context Protocol (MCP). To be more specific, we will add the GitHub MCP server, which will enable a combined workflow of issue management and website upgrades. 🧑‍🚀
 
-Lets get started!
+Let's get started!
 
 ### What is Model Context Protocol (MCP)?
 
