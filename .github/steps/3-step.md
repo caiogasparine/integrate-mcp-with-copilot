@@ -1,11 +1,11 @@
 ## Step 3: Solve issues with Agent Mode and GitHub MCP Server
 
 Great work doing that research and finding a potential collaboration opportunity.
-Not only did we find some new ideas to help organize extracurricular activies, but we did all that quickly too.
+Not only did we find some new ideas to help organize extracurricular activities, but we did all that quickly too.
 
 Plenty of time to focus on the fun stuff, like teaching our awesome students! 🌱
 
-Btw, it seems the teachers have also been active.
+On that note, it seems the teachers have also been active.
 Looks like they submitted some bugs and requests! Perfect! 🚀
 
 Now, let's use our MCP server's tools and Copilot to do a bit of triage and get some work done.
