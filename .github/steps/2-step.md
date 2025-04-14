@@ -24,9 +24,10 @@ Isn't that cool?! Now let's do it! 👩‍🚀
 
 ### :keyboard: Activity: Quickly find and save ideas
 
-1. Close any open files inside your codespace. This will help reduce unnecessary context.
-> :placard: **Note:** Also cosider changing the model in use with other models based on features and purpose by changing the "Agent" model property.
-> ![image](https://github.com/user-attachments/assets/9342d0b8-357f-4153-89c9-fba971bea3dc)
+- Close any open files inside your codespace. This will help reduce unnecessary context.
+> :placard: **Note:** Also cosider changing the model in use with other models based on features and purpose by changing the "Agent" model property.  
+
+ ![image](https://github.com/user-attachments/assets/9342d0b8-357f-4153-89c9-fba971bea3dc)
 
 1. Ensure the **Copilot Chat** panel is open and **Agent** mode is selected. Verify the MCP server tools are also still available.
 
