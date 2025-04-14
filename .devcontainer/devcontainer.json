@@ -13,7 +13,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "GitHub.copilot",
+        "GitHub.copilot@prerelease",
         "ms-python.python",
         "ms-python.debugpy",
         "dbaeumer.vscode-eslint"
