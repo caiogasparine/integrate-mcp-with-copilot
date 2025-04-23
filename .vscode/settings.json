@@ -1,0 +1,5 @@
+{
+    "github.copilot.chat.agent.thinkingTool": true,
+    "github.copilot.chat.codesearch.enabled": true,
+    "chat.extensionTools.enabled": true
+}
