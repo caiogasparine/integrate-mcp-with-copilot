@@ -14,15 +14,15 @@ Now, let's use our MCP server's tools and Copilot to do a bit of triage and get 
 
 1. Ensure the **Copilot Chat** panel is open and **Agent** mode is selected. Verify the MCP server tools are also still available.
 
-1. Ask Copilot about the open issues.
+1. Ask Copilot about the open issues on this repository.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > #codebase How many open issues are there?
+   > How many open issues are there on my repository?
    > ```
 
-   > :placard: **Note:** In our tests, we found that Copilot sometimes gets confused about the repository owner here. We chose to add `#codebase` to reduce this ambiguity and make the lesson smoother.
+   > 🪧 **Note:** Check that the List Issues tool is called with proper parameters.
 
 1. Ask Copilot to summarize the important issues.
 
