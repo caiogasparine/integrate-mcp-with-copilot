@@ -33,7 +33,7 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Are there any other repositories for organizing extra curricular activities?
+   > Search for any other repositories for organizing extra curricular activities
    > ```
 
 1. When an MCP tool is required, Copilot will ask for permission. **Verify the request** and modify if necessary, then click **Continue**.
@@ -61,7 +61,7 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > I like it. Let's create issues for these.
+   > I like it. Let's create issues for these in my repository.
    > ```
 
 1. Copilot will ask for permission to create issues on your repository. Click **Continue** for each new issue. Reminder: **verify the request** before running.
