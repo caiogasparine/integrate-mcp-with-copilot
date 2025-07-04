@@ -45,4 +45,37 @@ If the exercise isn't ready in 20 seconds, please check the [Actions](../../acti
 
 ---
 
+## Step-by-step Instructions
+
+1. **Clone this repository**  
+   Use `git clone` to copy the exercise to your local environment or Codespaces.
+
+2. **Start the MCP server**  
+   Follow the provided instructions or scripts to launch the MCP server locally.
+
+3. **Configure Copilot Agent Mode**  
+   Enable Copilot Agent Mode and connect it to your running MCP server.
+
+4. **Delegate tasks to Copilot**  
+   Use Copilot to research, open issues, and manage project tasks as described in the exercise.
+
+5. **Implement and submit changes**  
+   Work on the selected issue, commit your changes, and open a pull request.
+
+6. **Add comments to issues**  
+   Practice adding comments to a recently closed issue using Copilot.
+
+---
+
+## Steps Overview (First to Last)
+
+1. **Clone the repository** to your local environment or Codespaces.
+2. **Start the MCP server** using the provided instructions or scripts.
+3. **Configure Copilot Agent Mode** and connect it to your MCP server.
+4. **Delegate tasks to Copilot** for research and issue management.
+5. **Implement an issue** and submit your changes via pull request.
+6. **Add comments** to a recently closed issue using Copilot.
+
+---
+
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
