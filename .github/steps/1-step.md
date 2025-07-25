@@ -113,11 +113,11 @@ Before we dive into MCP, let's start up our development environment and refamili
 
 1. In the `.vscode/mcp.json` file, click the **Start** button and accept the prompt to authenticate with GitHub. This has just informed GitHub Copilot of the MCP server's capabilities.
 
-   <img width="350" alt="image" src="https://github.com/user-attachments/assets/330a87cd-590c-4645-91e5-4e1c2499be82" />
+   <img width="350" alt="mcp.json file showing start button" src="https://github.com/user-attachments/assets/0361a2ff-3fb3-428a-9cbc-d004a618afc8" />
 
-   <img width="200" alt="image" src="https://github.com/user-attachments/assets/a1765935-1980-4997-821f-fc832d065d57" /><br/>
+   <img width="350" alt="allow authentication prompt" src="https://github.com/user-attachments/assets/e28b2b2b-7ac2-461e-9df8-e206dc888afa" /><br/>
 
-   <img width="350" alt="image" src="https://github.com/user-attachments/assets/f61937a1-dcc3-49d6-bf7c-9a9108b8e2ae" />
+   <img width="350" alt="mp.json file showing running server" src="https://github.com/user-attachments/assets/f61937a1-dcc3-49d6-bf7c-9a9108b8e2ae" />
 
 1. In the Copilot side panel, click the **🛠️ icon** to show the additional capabilities.
 
