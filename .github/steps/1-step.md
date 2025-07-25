@@ -96,7 +96,7 @@ Before we dive into MCP, let's start up our development environment and refamili
 
    </details>
 
-1. Inside your codespace, create a new file named `mcp.json` in the `.vscode` directory and paste the following contents:
+1. Inside your codespace, navigate to the `.vscode` folder, and create a new file named `mcp.json`. Paste the following contents:
 
    📄 **.vscode/mcp.json**
 
@@ -104,51 +104,20 @@ Before we dive into MCP, let's start up our development environment and refamili
    {
      "servers": {
        "github": {
-         "command": "docker",
-         "args": [
-           "run",
-           "-i",
-           "--rm",
-           "-e",
-           "GITHUB_PERSONAL_ACCESS_TOKEN",
-           "ghcr.io/github/github-mcp-server:v0.5.0"
-         ],
-         "env": {
-           "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
-         }
+         "type": "http",
+         "url": "https://api.githubcopilot.com/mcp/"
        }
-     },
-     "inputs": [
-       {
-         "type": "promptString",
-         "id": "github_token",
-         "description": "GitHub Personal Access Token",
-         "password": true
-       }
-     ]
+     }
    }
    ```
 
-   > :placard: **Note:** Entering a hard-coded token is never recommended, you should use input variables or envFiles when an MCP server requires credentials.
+1. In the `.vscode/mcp.json` file, click the **Start** button and accept the prompt to authenticate with GitHub. This has just informed GitHub Copilot of the MCP server's capabilities.
 
-1. Expand the VS Code terminal panel. Run the following command to view and **make a copy** of your codespace's GitHub Token.
+   <img width="350" alt="image" src="https://github.com/user-attachments/assets/330a87cd-590c-4645-91e5-4e1c2499be82" />
 
-   ```bash
-      echo $GITHUB_TOKEN
-   ```
+   <img width="200" alt="image" src="https://github.com/user-attachments/assets/a1765935-1980-4997-821f-fc832d065d57" /><br/>
 
-   <details>
-   <summary>Why do I need this?</summary><br/>
-
-   The MCP server is a separate background process and needs credentials to perform operations. In this case, we use the temporary [codespace authorization](https://docs.github.com/en/enterprise-cloud@latest/codespaces/reference/security-in-github-codespaces#authentication) credential which becomes invalid when the codespace stops.
-
-   </details>
-
-1. In the `.vscode/mcp.json` file, click the **Start** button and provide the token. This has just informed GitHub Copilot of the MCP server's capabilities.
-
-   ![image](https://github.com/user-attachments/assets/62ee9c06-e9d4-44e4-b6df-f93417474af2)
-
-   ![image](https://github.com/user-attachments/assets/33195908-affe-488f-afef-e759498d1fe8)
+   <img width="350" alt="image" src="https://github.com/user-attachments/assets/f61937a1-dcc3-49d6-bf7c-9a9108b8e2ae" />
 
 1. In the Copilot side panel, click the **🛠️ icon** to show the additional capabilities.
 
