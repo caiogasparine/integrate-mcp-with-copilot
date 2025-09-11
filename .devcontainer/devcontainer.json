@@ -6,7 +6,7 @@
       "version": "latest"
     },
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "moby":false
+      "moby": false
     }    
   },
   "forwardPorts": [8000],
