@@ -6,21 +6,16 @@ Great work! You just connected your first MCP server to GitHub Copilot! 🎉
 
 We should probably look into them and start researching for other upgrades. Fortunately, with an MCP server for GitHub, triaging these and even doing some research to get ahead should be pretty quick! 🕵️
 
-### 📖 Theory: How do we use an MCP server's tools?
+### 📖 Theory: How MCP Tool Calling Works in Agent Mode
 
-Good news! The same way you would normally interact with Copilot, natural language. Just keep in mind the available capabilities and any permission restrictions from your token.
+Now that we have MCP connected, let's understand how **agent mode** actually uses these external tools. The key insight is that with each prompt you send to Copilot, a complete list of available MCP tools is also sent along with your request. This allows the AI model to dynamically select the most appropriate tools for your specific task.
 
-So, with the MCP Server available, we can now ask Copilot things beyond just our code. Here are some ideas to imagine the possibilities:
+![Flowchart diagram illustrating how a user interacts with Copilot, which communicates with a machine, workspace, and tools, all connected through a loop involving a large language model (LLM).](https://github.blog/wp-content/uploads/2025/05/how-it-works.png)
 
-For example:
+Here's how the **tool calling workflow** operates: When you make a request, Copilot examines both your prompt and the available tool catalog to determine which tools (if any) are needed.
 
-- Searching issues considering description, comments, and likes.
-- To open, update, or close issues on another repository.
-- Comparing repositories.
-- Learning about other authors you are working with.
-- Retrieve an issue, make changes on a branch, and start a pull request.
+Copilot executes the tools, receives their output, and can intelligently chain additional tool calls based on the results.
 
-Isn't that cool?! Now let's do it! 👩‍🚀
 
 ### :keyboard: Activity: Quickly find and save ideas
 
