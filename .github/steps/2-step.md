@@ -8,16 +8,24 @@ We should probably look into them and start researching for other upgrades. Fort
 
 ### 📖 Theory: How MCP Tool Calling Works in Agent Mode
 
-Now that we have MCP connected, let's understand how **agent mode** actually uses these external tools. The key insight is that with each prompt you send to Copilot, a complete list of available MCP tools is also sent along with your request. This allows the AI model to dynamically select the most appropriate tools for your specific task.
+Now that we have the GitHub MCP connected, let's look at how **agent mode** actually uses these external tools.
 
-![Flowchart diagram illustrating how a user interacts with Copilot, which communicates with a machine, workspace, and tools, all connected through a loop involving a large language model (LLM).](https://github.blog/wp-content/uploads/2025/05/how-it-works.png)
+With every prompt you send, Copilot also sends a catalog (list + schema) of all available tools to the LLM. The LLM plans and decides:
 
-Here's how the **tool calling workflow** operates: When you make a request, Copilot examines both your prompt and the available tool catalog to determine which tools (if any) are needed.
+- Is any tool needed for this request?
+- Which tool(s) best match the intent?
+- What arguments (per each tool's input schema) should be passed?
 
-Copilot executes the tools, receives their output, and can intelligently chain additional tool calls based on the results.
+Copilot then executes the chosen tool call(s) and streams results back to the LLM.
 
+![Flowchart diagram illustrating how a user interacts with Copilot Agent Mode](https://github.blog/wp-content/uploads/2025/05/how-it-works.png)
+
+> [!TIP]
+> You can also explicitly nudge Copilot to call a specific tool by including `#<tool_name>` in your prompt (e.g `#create_pull_request`, `#codebase`).
 
 ### :keyboard: Activity: Quickly find and save ideas
+
+Let's put the GitHub MCP server to use by researching, comparing, and capturing enhancement ideas!
 
 1. Close any open files inside your codespace. This will help reduce unnecessary context.
 
@@ -66,7 +74,3 @@ Copilot executes the tools, receives their output, and can intelligently chain a
 1. Since we are done researching, let's finish this chat session to clear the context. At the top of the **Copilot Chat** panel, click the **New Chat** icon (plus sign).
 
 1. With the new issues created, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
-
-
-> [!NOTE]
-> The Model Context Protocol (MCP) landscape is quickly evolving. Many servers, including the [Official GitHub MCP server](https://github.com/github/github-mcp-server) are in active development and do not have full parity with their stable APIs.
