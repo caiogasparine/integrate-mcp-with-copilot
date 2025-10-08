@@ -3,14 +3,11 @@
 Great work doing that research and finding a potential collaboration opportunity.
 Not only did we find some new ideas to help organize extracurricular activities, but we did all that quickly too.
 
-Plenty of time to focus on the fun stuff, like teaching our awesome students! 🌱
-
-On that note, it seems the teachers have also been active.
-Looks like they submitted some bugs and requests! Perfect! 🚀
-
 Now, let's use our MCP server's tools and Copilot to do a bit of triage and get some work done.
 
 ### :keyboard: Activity: Easily implement an important issue
+
+The issue backlog is piling up. Let’s finally tackle one— but which deserves our attention first?
 
 1. Ensure the **Copilot Chat** panel is open and **Agent** mode is selected. Verify the MCP server tools are also still available.
 
