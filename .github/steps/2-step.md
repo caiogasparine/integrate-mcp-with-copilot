@@ -23,6 +23,15 @@ Copilot then executes the chosen tool call(s) and streams results back to the LL
 > [!TIP]
 > You can also explicitly nudge Copilot to call a specific tool by including `#<tool_name>` in your prompt (e.g `#create_pull_request`, `#codebase`).
 
+From here, Copilot can use a set of GitHub‑aware tools to do more than just read or edit code in your repo. Here are a few things you can ask it to do:
+
+- Discover similar public projects to get inspiration.
+- Search issues considering description, comments, and likes.
+- Turn the new ideas you like into issues right away so you don’t lose them.
+- Retrieve an issue, make changes on a branch, and start a pull request.
+
+Isn't that cool?! Now let's do it! 👩‍🚀
+
 ### :keyboard: Activity: Quickly find and save ideas
 
 Let's put the GitHub MCP server to use by researching, comparing, and capturing enhancement ideas!
