@@ -10,7 +10,7 @@ We should probably look into them and start researching for other upgrades. Fort
 
 Now that we have the GitHub MCP connected, let's look at how **agent mode** actually uses these external tools.
 
-With every prompt you send, Copilot also sends a catalog (list + schema) of all available tools to the LLM. The LLM plans and decides:
+With every prompt you send, Copilot also includes the catalog (list + schema) of available tools. Copilot can then plan and decide:
 
 - Is any tool needed for this request?
 - Which tool(s) best match the intent?
