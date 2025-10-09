@@ -7,7 +7,7 @@ Now, let's use our MCP server's tools and Copilot to do a bit of triage and get 
 
 ### :keyboard: Activity: Easily implement an important issue
 
-The issue backlog is piling up. Let’s finally tackle one— but which deserves our attention first?
+The issue backlog is piling up. Let’s finally tackle one, but which deserves our attention first?
 
 1. Ensure the **Copilot Chat** panel is open and **Agent** mode is selected. Verify the MCP server tools are also still available.
 
